@@ -3,7 +3,7 @@
 //  Fedimos
 //
 //  Created by Vivien BERNARD on 28/08/2018.
-//  Copyright © 2018 Fedimos. All rights reserved.
+//  Copyright © 2018-2019 Fedimos.
 //
 
 import UIKit

@@ -10,6 +10,9 @@
 		06E1F87B928F7215D3A868C3 /* Pods_FedimosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F924C05A3E4537DFB66852 /* Pods_FedimosTests.framework */; };
 		57F9CE3E6FD322F7CBC76F0A /* Pods_Fedimos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F91C22AD0999979A884C0C1 /* Pods_Fedimos.framework */; };
 		769A350021384A6B00FEC4AA /* Info debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 769A34FF21384A6B00FEC4AA /* Info debug.plist */; };
+		769A35022139688100FEC4AA /* FDBubblePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A35012139688100FEC4AA /* FDBubblePath.swift */; };
+		769A350521396E0900FEC4AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A350421396E0900FEC4AA /* Extensions.swift */; };
+		769A35072139757E00FEC4AA /* FDBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A35062139757E00FEC4AA /* FDBubbleView.swift */; };
 		76CF7FC62135AC7A001B378E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF7FC52135AC7A001B378E /* AppDelegate.swift */; };
 		76CF7FC82135AC7A001B378E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF7FC72135AC7A001B378E /* ViewController.swift */; };
 		76CF7FCB2135AC7A001B378E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CF7FC92135AC7A001B378E /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		3F91C22AD0999979A884C0C1 /* Pods_Fedimos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fedimos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7D8AF494DAEF39F4345E0B /* Pods-FedimosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosTests/Pods-FedimosTests.release.xcconfig"; sourceTree = "<group>"; };
 		769A34FF21384A6B00FEC4AA /* Info debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info debug.plist"; sourceTree = "<group>"; };
+		769A35012139688100FEC4AA /* FDBubblePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBubblePath.swift; sourceTree = "<group>"; };
+		769A350421396E0900FEC4AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		769A35062139757E00FEC4AA /* FDBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBubbleView.swift; sourceTree = "<group>"; };
 		76CF7FC22135AC7A001B378E /* Fedimos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fedimos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CF7FC52135AC7A001B378E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76CF7FC72135AC7A001B378E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		769A35032139688400FEC4AA /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				769A35012139688100FEC4AA /* FDBubblePath.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		769A35082139758100FEC4AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				769A35062139757E00FEC4AA /* FDBubbleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		76CF7FB92135AC7A001B378E = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +140,9 @@
 			children = (
 				76CF7FC52135AC7A001B378E /* AppDelegate.swift */,
 				76CF7FC72135AC7A001B378E /* ViewController.swift */,
+				769A350421396E0900FEC4AA /* Extensions.swift */,
+				769A35032139688400FEC4AA /* Objects */,
+				769A35082139758100FEC4AA /* Views */,
 				76CF7FC92135AC7A001B378E /* Main.storyboard */,
 				76CF7FCC2135AC7E001B378E /* Assets.xcassets */,
 				76CF7FCE2135AC7E001B378E /* LaunchScreen.storyboard */,
@@ -382,7 +407,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76CF7FC82135AC7A001B378E /* ViewController.swift in Sources */,
+				769A35022139688100FEC4AA /* FDBubblePath.swift in Sources */,
 				76CF7FC62135AC7A001B378E /* AppDelegate.swift in Sources */,
+				769A350521396E0900FEC4AA /* Extensions.swift in Sources */,
+				769A35072139757E00FEC4AA /* FDBubbleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
