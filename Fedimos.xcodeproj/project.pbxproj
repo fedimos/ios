@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		06E1F87B928F7215D3A868C3 /* Pods_FedimosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F924C05A3E4537DFB66852 /* Pods_FedimosTests.framework */; };
 		57F9CE3E6FD322F7CBC76F0A /* Pods_Fedimos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F91C22AD0999979A884C0C1 /* Pods_Fedimos.framework */; };
-		769A350021384A6B00FEC4AA /* Info debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 769A34FF21384A6B00FEC4AA /* Info debug.plist */; };
+		7631893E21E0FFD200E4233F /* FedimosConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7631893521E0FFD200E4233F /* FedimosConnection.framework */; };
+		7631894521E0FFD200E4233F /* FedimosConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631894421E0FFD200E4233F /* FedimosConnectionTests.swift */; };
+		7631894721E0FFD200E4233F /* FedimosConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 7631893721E0FFD200E4233F /* FedimosConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7631894A21E0FFD200E4233F /* FedimosConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7631893521E0FFD200E4233F /* FedimosConnection.framework */; };
+		7631894B21E0FFD200E4233F /* FedimosConnection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7631893521E0FFD200E4233F /* FedimosConnection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7631895421E0FFEA00E4233F /* FCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631895321E0FFEA00E4233F /* FCConnection.swift */; };
 		769A35022139688100FEC4AA /* FDBubblePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A35012139688100FEC4AA /* FDBubblePath.swift */; };
 		769A350521396E0900FEC4AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A350421396E0900FEC4AA /* Extensions.swift */; };
 		769A35072139757E00FEC4AA /* FDBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769A35062139757E00FEC4AA /* FDBubbleView.swift */; };
@@ -20,10 +25,33 @@
 		76CF7FD02135AC7E001B378E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CF7FCE2135AC7E001B378E /* LaunchScreen.storyboard */; };
 		76CF7FDB2135AC7E001B378E /* FedimosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF7FDA2135AC7E001B378E /* FedimosTests.swift */; };
 		76CF7FE62135AC7E001B378E /* FedimosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF7FE52135AC7E001B378E /* FedimosUITests.swift */; };
+		A829E79507CF2563D8F0609D /* Pods_FedimosConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E1586FA865BE7D3FB263EA /* Pods_FedimosConnection.framework */; };
 		CC892434F314301E4EEB46BB /* Pods_FedimosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B03991CFF9943145218A6E /* Pods_FedimosUITests.framework */; };
+		E27086BC4547622BD8C10EA4 /* Pods_FedimosConnectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01464DDBA93923B853E78A46 /* Pods_FedimosConnectionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7631893F21E0FFD200E4233F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CF7FBA2135AC7A001B378E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7631893421E0FFD200E4233F;
+			remoteInfo = FedimosConnection;
+		};
+		7631894121E0FFD200E4233F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CF7FBA2135AC7A001B378E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CF7FC12135AC7A001B378E;
+			remoteInfo = Fedimos;
+		};
+		7631894821E0FFD200E4233F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CF7FBA2135AC7A001B378E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7631893421E0FFD200E4233F;
+			remoteInfo = FedimosConnection;
+		};
 		76CF7FD72135AC7E001B378E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 76CF7FBA2135AC7A001B378E /* Project object */;
@@ -40,11 +68,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7631894F21E0FFD200E4233F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7631894B21E0FFD200E4233F /* FedimosConnection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0562A1366EDD22CE867B87F9 /* Pods-Fedimos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fedimos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fedimos/Pods-Fedimos.release.xcconfig"; sourceTree = "<group>"; };
-		06DD85C9E1FF2BC0C37117A2 /* Pods-FedimosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosUITests/Pods-FedimosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		01464DDBA93923B853E78A46 /* Pods_FedimosConnectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FedimosConnectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		119235A2D54D39F95A177C85 /* Pods-FedimosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosUITests/Pods-FedimosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35E1586FA865BE7D3FB263EA /* Pods_FedimosConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FedimosConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5C2C697D1C76C3A7F6DCA1 /* Pods-FedimosConnectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosConnectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosConnectionTests/Pods-FedimosConnectionTests.release.xcconfig"; sourceTree = "<group>"; };
 		3F91C22AD0999979A884C0C1 /* Pods_Fedimos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fedimos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C7D8AF494DAEF39F4345E0B /* Pods-FedimosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosTests/Pods-FedimosTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E2209B0E70BEB043BA936A7 /* Pods-Fedimos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fedimos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fedimos/Pods-Fedimos.release.xcconfig"; sourceTree = "<group>"; };
+		553B667B5A6C2DEE273375B5 /* Pods-FedimosConnectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosConnectionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosConnectionTests/Pods-FedimosConnectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F299D0A7DB755AFF34CECF4 /* Pods-FedimosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosTests/Pods-FedimosTests.release.xcconfig"; sourceTree = "<group>"; };
+		7631893521E0FFD200E4233F /* FedimosConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FedimosConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7631893721E0FFD200E4233F /* FedimosConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FedimosConnection.h; sourceTree = "<group>"; };
+		7631893821E0FFD200E4233F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7631893D21E0FFD200E4233F /* FedimosConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FedimosConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7631894421E0FFD200E4233F /* FedimosConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FedimosConnectionTests.swift; sourceTree = "<group>"; };
+		7631894621E0FFD200E4233F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7631895321E0FFEA00E4233F /* FCConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCConnection.swift; sourceTree = "<group>"; };
 		769A34FF21384A6B00FEC4AA /* Info debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info debug.plist"; sourceTree = "<group>"; };
 		769A35012139688100FEC4AA /* FDBubblePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBubblePath.swift; sourceTree = "<group>"; };
 		769A350421396E0900FEC4AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -62,18 +115,38 @@
 		76CF7FE12135AC7E001B378E /* FedimosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FedimosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CF7FE52135AC7E001B378E /* FedimosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FedimosUITests.swift; sourceTree = "<group>"; };
 		76CF7FE72135AC7E001B378E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		816611A8D2BA81D0C97B26BA /* Pods-FedimosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosUITests/Pods-FedimosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88B03991CFF9943145218A6E /* Pods_FedimosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FedimosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC62258A05FA0D4479F854AA /* Pods-FedimosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosTests/Pods-FedimosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A4233404619BAFA7E7C142F /* Pods-FedimosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosTests/Pods-FedimosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA3FC594989E4330A58B111 /* Pods-FedimosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosUITests/Pods-FedimosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9FDA895C98195396F43EFB33 /* Pods-Fedimos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fedimos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fedimos/Pods-Fedimos.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6362E84B16535A7612D804 /* Pods-FedimosConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosConnection.release.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosConnection/Pods-FedimosConnection.release.xcconfig"; sourceTree = "<group>"; };
 		D8F924C05A3E4537DFB66852 /* Pods_FedimosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FedimosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E240FC15B8F0D72D9FC9CC7C /* Pods-Fedimos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fedimos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fedimos/Pods-Fedimos.debug.xcconfig"; sourceTree = "<group>"; };
+		E9730147C7E3D540B0F2F0D9 /* Pods-FedimosConnection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FedimosConnection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FedimosConnection/Pods-FedimosConnection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7631893221E0FFD200E4233F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A829E79507CF2563D8F0609D /* Pods_FedimosConnection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7631893A21E0FFD200E4233F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7631893E21E0FFD200E4233F /* FedimosConnection.framework in Frameworks */,
+				E27086BC4547622BD8C10EA4 /* Pods_FedimosConnectionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76CF7FBF2135AC7A001B378E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7631894A21E0FFD200E4233F /* FedimosConnection.framework in Frameworks */,
 				57F9CE3E6FD322F7CBC76F0A /* Pods_Fedimos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +170,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E7C9207A915C4FBDD8CB5BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FDA895C98195396F43EFB33 /* Pods-Fedimos.debug.xcconfig */,
+				4E2209B0E70BEB043BA936A7 /* Pods-Fedimos.release.xcconfig */,
+				E9730147C7E3D540B0F2F0D9 /* Pods-FedimosConnection.debug.xcconfig */,
+				CA6362E84B16535A7612D804 /* Pods-FedimosConnection.release.xcconfig */,
+				553B667B5A6C2DEE273375B5 /* Pods-FedimosConnectionTests.debug.xcconfig */,
+				3D5C2C697D1C76C3A7F6DCA1 /* Pods-FedimosConnectionTests.release.xcconfig */,
+				8A4233404619BAFA7E7C142F /* Pods-FedimosTests.debug.xcconfig */,
+				5F299D0A7DB755AFF34CECF4 /* Pods-FedimosTests.release.xcconfig */,
+				119235A2D54D39F95A177C85 /* Pods-FedimosUITests.debug.xcconfig */,
+				8EA3FC594989E4330A58B111 /* Pods-FedimosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7631893621E0FFD200E4233F /* FedimosConnection */ = {
+			isa = PBXGroup;
+			children = (
+				7631893721E0FFD200E4233F /* FedimosConnection.h */,
+				7631893821E0FFD200E4233F /* Info.plist */,
+				7631895321E0FFEA00E4233F /* FCConnection.swift */,
+			);
+			path = FedimosConnection;
+			sourceTree = "<group>";
+		};
+		7631894321E0FFD200E4233F /* FedimosConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				7631894421E0FFD200E4233F /* FedimosConnectionTests.swift */,
+				7631894621E0FFD200E4233F /* Info.plist */,
+			);
+			path = FedimosConnectionTests;
+			sourceTree = "<group>";
+		};
 		769A35032139688400FEC4AA /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +228,11 @@
 				76CF7FC42135AC7A001B378E /* Fedimos */,
 				76CF7FD92135AC7E001B378E /* FedimosTests */,
 				76CF7FE42135AC7E001B378E /* FedimosUITests */,
+				7631893621E0FFD200E4233F /* FedimosConnection */,
+				7631894321E0FFD200E4233F /* FedimosConnectionTests */,
 				76CF7FC32135AC7A001B378E /* Products */,
-				BC8DC180FA82B2C40A5DDB45 /* Pods */,
 				89F298889CF089D4BB58281C /* Frameworks */,
+				6E7C9207A915C4FBDD8CB5BE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +242,8 @@
 				76CF7FC22135AC7A001B378E /* Fedimos.app */,
 				76CF7FD62135AC7E001B378E /* FedimosTests.xctest */,
 				76CF7FE12135AC7E001B378E /* FedimosUITests.xctest */,
+				7631893521E0FFD200E4233F /* FedimosConnection.framework */,
+				7631893D21E0FFD200E4233F /* FedimosConnectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,26 +289,66 @@
 				3F91C22AD0999979A884C0C1 /* Pods_Fedimos.framework */,
 				D8F924C05A3E4537DFB66852 /* Pods_FedimosTests.framework */,
 				88B03991CFF9943145218A6E /* Pods_FedimosUITests.framework */,
+				35E1586FA865BE7D3FB263EA /* Pods_FedimosConnection.framework */,
+				01464DDBA93923B853E78A46 /* Pods_FedimosConnectionTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC8DC180FA82B2C40A5DDB45 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E240FC15B8F0D72D9FC9CC7C /* Pods-Fedimos.debug.xcconfig */,
-				0562A1366EDD22CE867B87F9 /* Pods-Fedimos.release.xcconfig */,
-				AC62258A05FA0D4479F854AA /* Pods-FedimosTests.debug.xcconfig */,
-				6C7D8AF494DAEF39F4345E0B /* Pods-FedimosTests.release.xcconfig */,
-				816611A8D2BA81D0C97B26BA /* Pods-FedimosUITests.debug.xcconfig */,
-				06DD85C9E1FF2BC0C37117A2 /* Pods-FedimosUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7631893021E0FFD200E4233F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7631894721E0FFD200E4233F /* FedimosConnection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7631893421E0FFD200E4233F /* FedimosConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7631894C21E0FFD200E4233F /* Build configuration list for PBXNativeTarget "FedimosConnection" */;
+			buildPhases = (
+				E9E86C0236E7B1DEEA10054A /* [CP] Check Pods Manifest.lock */,
+				7631893021E0FFD200E4233F /* Headers */,
+				7631893121E0FFD200E4233F /* Sources */,
+				7631893221E0FFD200E4233F /* Frameworks */,
+				7631893321E0FFD200E4233F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FedimosConnection;
+			productName = FedimosConnection;
+			productReference = 7631893521E0FFD200E4233F /* FedimosConnection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7631893C21E0FFD200E4233F /* FedimosConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7631895021E0FFD200E4233F /* Build configuration list for PBXNativeTarget "FedimosConnectionTests" */;
+			buildPhases = (
+				646BC8F464630F6D7E05D6B7 /* [CP] Check Pods Manifest.lock */,
+				7631893921E0FFD200E4233F /* Sources */,
+				7631893A21E0FFD200E4233F /* Frameworks */,
+				7631893B21E0FFD200E4233F /* Resources */,
+				2B36625F4541972036AEC09D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7631894021E0FFD200E4233F /* PBXTargetDependency */,
+				7631894221E0FFD200E4233F /* PBXTargetDependency */,
+			);
+			name = FedimosConnectionTests;
+			productName = FedimosConnectionTests;
+			productReference = 7631893D21E0FFD200E4233F /* FedimosConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		76CF7FC12135AC7A001B378E /* Fedimos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76CF7FEA2135AC7E001B378E /* Build configuration list for PBXNativeTarget "Fedimos" */;
@@ -205,10 +358,12 @@
 				76CF7FBF2135AC7A001B378E /* Frameworks */,
 				76CF7FC02135AC7A001B378E /* Resources */,
 				901A91F61DEA4F077F0780FE /* [CP] Embed Pods Frameworks */,
+				7631894F21E0FFD200E4233F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7631894921E0FFD200E4233F /* PBXTargetDependency */,
 			);
 			name = Fedimos;
 			productName = Fedimos;
@@ -259,19 +414,30 @@
 		76CF7FBA2135AC7A001B378E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Fedimos;
 				TargetAttributes = {
+					7631893421E0FFD200E4233F = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					7631893C21E0FFD200E4233F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 76CF7FC12135AC7A001B378E;
+					};
 					76CF7FC12135AC7A001B378E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					76CF7FD52135AC7E001B378E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 76CF7FC12135AC7A001B378E;
 					};
 					76CF7FE02135AC7E001B378E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 76CF7FC12135AC7A001B378E;
 					};
 				};
@@ -292,17 +458,32 @@
 				76CF7FC12135AC7A001B378E /* Fedimos */,
 				76CF7FD52135AC7E001B378E /* FedimosTests */,
 				76CF7FE02135AC7E001B378E /* FedimosUITests */,
+				7631893421E0FFD200E4233F /* FedimosConnection */,
+				7631893C21E0FFD200E4233F /* FedimosConnectionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7631893321E0FFD200E4233F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7631893B21E0FFD200E4233F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76CF7FC02135AC7A001B378E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				76CF7FD02135AC7E001B378E /* LaunchScreen.storyboard in Resources */,
-				769A350021384A6B00FEC4AA /* Info debug.plist in Resources */,
 				76CF7FCD2135AC7E001B378E /* Assets.xcassets in Resources */,
 				76CF7FCB2135AC7A001B378E /* Main.storyboard in Resources */,
 			);
@@ -343,6 +524,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2B36625F4541972036AEC09D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FedimosConnectionTests/Pods-FedimosConnectionTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FedimosConnectionTests/Pods-FedimosConnectionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		50E1189E66E685BB76FE849A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +556,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-FedimosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		646BC8F464630F6D7E05D6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FedimosConnectionTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,9 +618,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E9E86C0236E7B1DEEA10054A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FedimosConnection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7631893121E0FFD200E4233F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7631895421E0FFEA00E4233F /* FCConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7631893921E0FFD200E4233F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7631894521E0FFD200E4233F /* FedimosConnectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76CF7FBE2135AC7A001B378E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +686,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7631894021E0FFD200E4233F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7631893421E0FFD200E4233F /* FedimosConnection */;
+			targetProxy = 7631893F21E0FFD200E4233F /* PBXContainerItemProxy */;
+		};
+		7631894221E0FFD200E4233F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76CF7FC12135AC7A001B378E /* Fedimos */;
+			targetProxy = 7631894121E0FFD200E4233F /* PBXContainerItemProxy */;
+		};
+		7631894921E0FFD200E4233F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7631893421E0FFD200E4233F /* FedimosConnection */;
+			targetProxy = 7631894821E0FFD200E4233F /* PBXContainerItemProxy */;
+		};
 		76CF7FD82135AC7E001B378E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 76CF7FC12135AC7A001B378E /* Fedimos */;
@@ -465,6 +733,119 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7631894D21E0FFD200E4233F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9730147C7E3D540B0F2F0D9 /* Pods-FedimosConnection.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H4BEG4U49A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FedimosConnection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vivienbernard.FedimosConnection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7631894E21E0FFD200E4233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6362E84B16535A7612D804 /* Pods-FedimosConnection.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H4BEG4U49A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FedimosConnection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vivienbernard.FedimosConnection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7631895121E0FFD200E4233F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553B667B5A6C2DEE273375B5 /* Pods-FedimosConnectionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4BEG4U49A;
+				INFOPLIST_FILE = FedimosConnectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vivienbernard.FedimosConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fedimos.app/Fedimos";
+			};
+			name = Debug;
+		};
+		7631895221E0FFD200E4233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5C2C697D1C76C3A7F6DCA1 /* Pods-FedimosConnectionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H4BEG4U49A;
+				INFOPLIST_FILE = FedimosConnectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vivienbernard.FedimosConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fedimos.app/Fedimos";
+			};
+			name = Release;
+		};
 		76CF7FE82135AC7E001B378E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -581,8 +962,9 @@
 		};
 		76CF7FEB2135AC7E001B378E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E240FC15B8F0D72D9FC9CC7C /* Pods-Fedimos.debug.xcconfig */;
+			baseConfigurationReference = 9FDA895C98195396F43EFB33 /* Pods-Fedimos.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4BEG4U49A;
@@ -594,15 +976,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fedimosorg.Fedimos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		76CF7FEC2135AC7E001B378E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0562A1366EDD22CE867B87F9 /* Pods-Fedimos.release.xcconfig */;
+			baseConfigurationReference = 4E2209B0E70BEB043BA936A7 /* Pods-Fedimos.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4BEG4U49A;
@@ -614,14 +997,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fedimosorg.Fedimos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		76CF7FEE2135AC7E001B378E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC62258A05FA0D4479F854AA /* Pods-FedimosTests.debug.xcconfig */;
+			baseConfigurationReference = 8A4233404619BAFA7E7C142F /* Pods-FedimosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -635,7 +1018,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fedimosorg.FedimosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fedimos.app/Fedimos";
 			};
@@ -643,7 +1026,7 @@
 		};
 		76CF7FEF2135AC7E001B378E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7D8AF494DAEF39F4345E0B /* Pods-FedimosTests.release.xcconfig */;
+			baseConfigurationReference = 5F299D0A7DB755AFF34CECF4 /* Pods-FedimosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -657,7 +1040,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fedimosorg.FedimosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fedimos.app/Fedimos";
 			};
@@ -665,7 +1048,7 @@
 		};
 		76CF7FF12135AC7E001B378E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 816611A8D2BA81D0C97B26BA /* Pods-FedimosUITests.debug.xcconfig */;
+			baseConfigurationReference = 119235A2D54D39F95A177C85 /* Pods-FedimosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -678,7 +1061,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fedimosorg.FedimosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Fedimos;
 			};
@@ -686,7 +1069,7 @@
 		};
 		76CF7FF22135AC7E001B378E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06DD85C9E1FF2BC0C37117A2 /* Pods-FedimosUITests.release.xcconfig */;
+			baseConfigurationReference = 8EA3FC594989E4330A58B111 /* Pods-FedimosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -699,7 +1082,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fedimosorg.FedimosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Fedimos;
 			};
@@ -708,6 +1091,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7631894C21E0FFD200E4233F /* Build configuration list for PBXNativeTarget "FedimosConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7631894D21E0FFD200E4233F /* Debug */,
+				7631894E21E0FFD200E4233F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7631895021E0FFD200E4233F /* Build configuration list for PBXNativeTarget "FedimosConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7631895121E0FFD200E4233F /* Debug */,
+				7631895221E0FFD200E4233F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		76CF7FBD2135AC7A001B378E /* Build configuration list for PBXProject "Fedimos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -6,7 +6,6 @@ target 'Fedimos' do
   use_frameworks!
 
   # Pods for Fedimos
-	pod 'Socket.IO-Client-Swift', '~> 13.3.0'
 
   target 'FedimosTests' do
     inherit! :search_paths
@@ -14,6 +13,21 @@ target 'Fedimos' do
   end
 
   target 'FedimosUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'FedimosConnection' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FedimosConnection
+
+pod 'Socket.IO-Client-Swift', '~> 13.3.0'
+
+  target 'FedimosConnectionTests' do
     inherit! :search_paths
     # Pods for testing
   end
