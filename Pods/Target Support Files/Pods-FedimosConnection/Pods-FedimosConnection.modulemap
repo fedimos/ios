@@ -1,0 +1,6 @@
+framework module Pods_FedimosConnection {
+  umbrella header "Pods-FedimosConnection-umbrella.h"
+
+  export *
+  module * { export * }
+}

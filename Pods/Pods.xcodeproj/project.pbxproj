@@ -3,54 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B8BD972F869BC19D5F23CAE36C9C28A /* Pods-FedimosTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 768838E3ED452375F13B66B7575912D2 /* Pods-FedimosTests-dummy.m */; };
-		1B68259E38AF1B5FEB040E84D1AF4C01 /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A99A674ED67A06B84A4FF4B4A7A4AE6 /* SocketEnginePollable.swift */; };
-		1B71130306387CF3873C0F1401688BBC /* SocketRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EB60A53C6910656989A69024C8B922 /* SocketRawView.swift */; };
-		2170702111E71374FC3BFC60FF43C682 /* Pods-FedimosUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 763D01E758618AD05C176B7AC79AE8EF /* Pods-FedimosUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E638CB6C03F34CBEA8A8269241291AE /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01B7D044B0C033C802BDD51BF2F843 /* SocketAckEmitter.swift */; };
-		418B696DEFD7A5828A142CEE0BB95A0D /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEEEB0A3EF719B1CF6286BE722802A /* SocketStringReader.swift */; };
-		435810A14C18FD0B4B9E9EE3DBF5536F /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADE6D9FF1B316978BA893663D34189 /* SocketEnginePacketType.swift */; };
-		44E9D8A00942779B1730A6DB4D7F9ED9 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083D90EAA19406E80FAA0E9B2E8CDBBA /* SocketLogger.swift */; };
-		4E71459FFF10B66075F49CB60C6F436E /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45E2B96B7DF22F02684DA8EC27BEC8D /* SocketTypes.swift */; };
+		0B8BD972F869BC19D5F23CAE36C9C28A /* Pods-FedimosTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37F7D5220F7145EEFFA662AEDFB8B67 /* Pods-FedimosTests-dummy.m */; };
+		1B68259E38AF1B5FEB040E84D1AF4C01 /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF35AE1E386B75CDC1FA225BF404A0A4 /* SocketEnginePollable.swift */; };
+		1B71130306387CF3873C0F1401688BBC /* SocketRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C9006D1A0F8DDCB40CBD16D82C1263 /* SocketRawView.swift */; };
+		2170702111E71374FC3BFC60FF43C682 /* Pods-FedimosUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE86067FE17BD60E63E8D86F254F82 /* Pods-FedimosUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382C62FBF20E5C1C8257029743F16305 /* Pods-FedimosConnectionTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E228A0610F698D66AAD8912FA6EB9D /* Pods-FedimosConnectionTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E638CB6C03F34CBEA8A8269241291AE /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D3F0C824453C9E447DB4B82D2840E /* SocketAckEmitter.swift */; };
+		418B696DEFD7A5828A142CEE0BB95A0D /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423164BA88A191CD56E6A9F270F75ADC /* SocketStringReader.swift */; };
+		435810A14C18FD0B4B9E9EE3DBF5536F /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6DB80D0EA3CA411A356C039F61D0D /* SocketEnginePacketType.swift */; };
+		44E9D8A00942779B1730A6DB4D7F9ED9 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D1E41A0590DCF4130F34617287ED66 /* SocketLogger.swift */; };
+		4E71459FFF10B66075F49CB60C6F436E /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FC419EEAB05AC1183D2ABC4ED7A9C /* SocketTypes.swift */; };
 		51A6FBEBB17B5222412388BA88D21E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
-		5223C29A44BD0B6D3BF820D3A4A7AAF5 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59084113996BD1D38F8FE9DE9A3DCDD5 /* Starscream-dummy.m */; };
-		56DF330DFCBC4975A01773DCA1F745D5 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77134780A564D939CB053D46FF893A /* SocketIOClient.swift */; };
-		5C5EBA0FCEA97045F17E6CCE1AB4E87E /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06993A323D2E507FA63A1D2D33F1AAB5 /* SocketEventHandler.swift */; };
+		56DF330DFCBC4975A01773DCA1F745D5 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A73602D28ADF9585941A610E255AED /* SocketIOClient.swift */; };
+		5C5EBA0FCEA97045F17E6CCE1AB4E87E /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90C442081FE9782D747C423F5BB46B0 /* SocketEventHandler.swift */; };
 		5D1B25932EAE3F0890A8868E0AB6806C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
 		5D7CE4510D85EB8C365920DA6F31BA2C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */; };
-		60915D35BDC3B417D062198426FF864A /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D3A2771A481F05EC9306F09B4A147 /* SocketParsable.swift */; };
-		66B42CD97158DBBC950C293CF0E82C6F /* Socket.IO-Client-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E92294182EA266C4B17FB279F439875 /* Socket.IO-Client-Swift-dummy.m */; };
-		67222EF64CC14717E50C3F413038C5DF /* Pods-Fedimos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8547C81517BADE57D79FA86ACB1D89 /* Pods-Fedimos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E639AFD25714A048213720262E6131C /* Pods-FedimosTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D35C0584F172FD9BB4B4B22C7F3E40D /* Pods-FedimosTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60915D35BDC3B417D062198426FF864A /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F956073C535A3719BE5CEF9E88E410 /* SocketParsable.swift */; };
+		61114A42E22466DD49E712C864D4FB3B /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD42085C01E62C098A0D8E9851F240 /* SSLSecurity.swift */; };
+		66B42CD97158DBBC950C293CF0E82C6F /* Socket.IO-Client-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F068497492C1254085933AD1B8653 /* Socket.IO-Client-Swift-dummy.m */; };
+		67222EF64CC14717E50C3F413038C5DF /* Pods-Fedimos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F804CD29425709A1A2BB333A4991EDB /* Pods-Fedimos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E639AFD25714A048213720262E6131C /* Pods-FedimosTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BDE203E4801129A22156AA5C6F4E51B /* Pods-FedimosTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		702327C3AA1A002E7F4C2B17ADEDA0CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
-		72D9287B04515C263CC43EFE977755BB /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DC13A791C99DB10B3147037DCF91D /* SocketEngineSpec.swift */; };
+		72D9287B04515C263CC43EFE977755BB /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D47A1A3301E0646E3E30331435ACC6 /* SocketEngineSpec.swift */; };
 		788C464559EEB554B95F871C4E1688AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
-		7E03C848441BF221542F4B59501E1A85 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC2021A00C3EEC011AA37AAFB540CA /* SocketExtensions.swift */; };
-		80A386AE5EC0E32692BDFB13F2766537 /* SocketIOStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFCAF9703A456210A49EC822974A755 /* SocketIOStatus.swift */; };
-		8567179E33C6036C26EF68BB5C2B32A1 /* SocketManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854F0B45D4C657D653E1983C4F9E2116 /* SocketManagerSpec.swift */; };
-		873EC940F18A3D30CC9A80B162516E86 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24358E39361EB051BB15D809E6A47777 /* SocketIOClientSpec.swift */; };
-		88E0F08EEE3ABBEECD869E6A3BAD0B27 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D70CCE9A4F1806B6379827CB8E23 /* SocketManager.swift */; };
-		89586CBBABC10036D339CE82457A1AA2 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B005375C5D701A515A7C4519905F5 /* SSLSecurity.swift */; };
-		931B9613FD761467875B4A8E92A91B0D /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455C4E44BCEAF9C89660D02F28735D2D /* SocketEngineWebsocket.swift */; };
+		7E03C848441BF221542F4B59501E1A85 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081FA97EC589731ED143879E3C286C5 /* SocketExtensions.swift */; };
+		80A386AE5EC0E32692BDFB13F2766537 /* SocketIOStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219FF8FA8B0D3FE90D55C42DF981293C /* SocketIOStatus.swift */; };
+		8567179E33C6036C26EF68BB5C2B32A1 /* SocketManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559F7E6B9B7033B533B3BB123C1FF4D0 /* SocketManagerSpec.swift */; };
+		873EC940F18A3D30CC9A80B162516E86 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E3682EC106FE6D3180D6E02407006 /* SocketIOClientSpec.swift */; };
+		88C7FD025A96446A68D021511646CD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		88E0F08EEE3ABBEECD869E6A3BAD0B27 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261E6886D626D30F903466DEEEFFEA3 /* SocketManager.swift */; };
+		931B9613FD761467875B4A8E92A91B0D /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA340FD2D4730AB88AB4A5AD577B15B /* SocketEngineWebsocket.swift */; };
 		94E27AEA854EA2EDD886A77AD7AD2AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
-		9FC944A588925AA03A7DE8BDAC93A5AF /* Socket.IO-Client-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DDA5F673BE25E92BA7F5140B1FB676 /* Socket.IO-Client-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0F6BBD0227815F7C3F667BD7A1F28BC /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBF451B8B8DBBE3003C41F20418B2F8 /* SocketPacket.swift */; };
-		A18D2A832262FB1D4E1EF1B8E329AC03 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D62A957863D677CE5B824F93C294B6 /* WebSocket.swift */; };
-		A2761654717074CDE62360CBAF084A6F /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47353A2BE419AC453BF9D04C42306F0 /* SocketAckManager.swift */; };
-		A65C94FA343A80F5065FD60E9FED024E /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A3C751609E1421FD29A43A1ADC5DB5 /* SocketEngine.swift */; };
-		A6DBA64B50C319C02545E97BB4EC0EC0 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874B14B018CC4A1584572C1572ADA448 /* SSLSecurity.swift */; };
-		AB3F21E8874B4199CAF32FB5FB1DB876 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D8012EE5AE540D7EAF490860CA202 /* SocketEngineClient.swift */; };
-		B6BDB00990B0FAEC0A784407306AAFD0 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7FD8335DFE119AF0E50232D16B77488 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C43AEE5AA29DB15B50D3D0ADF502A376 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF3C1C98E9075DEDB5B2214B739E4F /* Compression.swift */; };
-		CC239ADFDAF1B58A6B90D813A9D65E4D /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6E39BC8C36CB6D51DE69C50741D2E /* SocketIOClientOption.swift */; };
-		D89AAAAA98775FA48A503DD5716E7FCA /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8F56E3B844A893CDD98ABC30CCCE3 /* SocketAnyEvent.swift */; };
-		DEC10F4AB401FD6132572D551B9678BB /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F2B60ADC61F985D2011A9C5A9A04A /* SocketIOClientConfiguration.swift */; };
-		F21896429643B436274D9008A3179FE4 /* Pods-FedimosUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B87A84131E87B03DDF2D6095DA38C /* Pods-FedimosUITests-dummy.m */; };
-		F2CE3BBCDC8FB719732325162BB1638A /* Pods-Fedimos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEB1C3D3973060F7E2D03F9B57BC5FC /* Pods-Fedimos-dummy.m */; };
+		9AA861925B95A5F10B11859AF04615E6 /* Pods-FedimosConnection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA73AC2F618CBB4816408C6D83542FFF /* Pods-FedimosConnection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC944A588925AA03A7DE8BDAC93A5AF /* Socket.IO-Client-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C110CD2524D9511C19B462648439058 /* Socket.IO-Client-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0F6BBD0227815F7C3F667BD7A1F28BC /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B57F2D48A7A88901AF1A512B1956 /* SocketPacket.swift */; };
+		A2761654717074CDE62360CBAF084A6F /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36707EC0E976FB4F6A232EB2BD7950E /* SocketAckManager.swift */; };
+		A65C94FA343A80F5065FD60E9FED024E /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3EB73D30B06D66B8C63CB3FFA74702 /* SocketEngine.swift */; };
+		A6DBA64B50C319C02545E97BB4EC0EC0 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE619744514FAEC2E08FA4CE40F6B34 /* SSLSecurity.swift */; };
+		AB3F21E8874B4199CAF32FB5FB1DB876 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF627C505B95E7CF71D8293BABFF8074 /* SocketEngineClient.swift */; };
+		B6BDB00990B0FAEC0A784407306AAFD0 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 056BE9DE0394BE90BA2B7CF32C09B858 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF71D87507729E105173DEFB3A18F6BA /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1846AFB3209AC570E0B53E417823C /* WebSocket.swift */; };
+		C48D8FE19EED2CFFB9437129BA4A7E44 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0669D3CAB73C1772518B5DF8952525 /* Starscream-dummy.m */; };
+		CC239ADFDAF1B58A6B90D813A9D65E4D /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7443702074EE64DB5E2D657AA3C7E7 /* SocketIOClientOption.swift */; };
+		CEFA7DA1F9684C37D210F46764F52D9D /* Pods-FedimosConnectionTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5BE3731DFF252DC35EAD2CB43414D /* Pods-FedimosConnectionTests-dummy.m */; };
+		D89AAAAA98775FA48A503DD5716E7FCA /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CACC2B6307D5448375406522CB48FE /* SocketAnyEvent.swift */; };
+		DEC10F4AB401FD6132572D551B9678BB /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1C558E7DFA5CC820D5294781B5210 /* SocketIOClientConfiguration.swift */; };
+		DF6312C63D63F970E092F988BFEE952D /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61234A03B4F8D19FDA7939702A9545B5 /* Compression.swift */; };
+		E38FE84312EF50E7E2C1FC250111E997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		E7519CA52CB0DF3193C8E5C418F93A58 /* Pods-FedimosConnection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B1E53D219BCB907628ACE719E6077F /* Pods-FedimosConnection-dummy.m */; };
+		F21896429643B436274D9008A3179FE4 /* Pods-FedimosUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7433BF23F21666E1383DD6A11991F28 /* Pods-FedimosUITests-dummy.m */; };
+		F2CE3BBCDC8FB719732325162BB1638A /* Pods-Fedimos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D46F30791744C5247A07FEDFB95614CD /* Pods-Fedimos-dummy.m */; };
+		F77C7D675C2ED54231B0E56826BAA57F /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806E2825D19B346B76A9153FC44A0F2 /* SSLClientCertificate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,12 +75,40 @@
 			remoteGlobalIDString = 19BA5DA0AADB14E828E47EC017A3DAD7;
 			remoteInfo = "Pods-Fedimos";
 		};
+		2FE3A3ACB5B96F2CCD80A6280E8FE8F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39002CCFEFEB53D0A2610E9BE1D5CE1E;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		4E9A260118F2F638C437589DBED496BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3599D01339BC47FEB0B4A9312D0BC09E;
+			remoteInfo = Starscream;
+		};
 		77494D6729C384AEFE508C1F1E90616B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 39002CCFEFEB53D0A2610E9BE1D5CE1E;
 			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		8DDF15FC9A4E8185572623EDA634B495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3599D01339BC47FEB0B4A9312D0BC09E;
+			remoteInfo = Starscream;
+		};
+		A113A02659357E991CF3CD7ED412959E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 757087E16B95317D90544B90A61900DB;
+			remoteInfo = "Pods-FedimosConnection";
 		};
 		D528D323E6425E71B21DA720DDE19EA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -89,87 +124,116 @@
 			remoteGlobalIDString = 19BA5DA0AADB14E828E47EC017A3DAD7;
 			remoteInfo = "Pods-Fedimos";
 		};
+		F5CAE11B795C5A7EFD460A0FCBF30C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39002CCFEFEB53D0A2610E9BE1D5CE1E;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0171C76D5E6534EC0A1151D1CEF3DBC8 /* Pods-Fedimos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fedimos-acknowledgements.markdown"; sourceTree = "<group>"; };
-		06993A323D2E507FA63A1D2D33F1AAB5 /* SocketEventHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = Source/SocketIO/Client/SocketEventHandler.swift; sourceTree = "<group>"; };
-		083D90EAA19406E80FAA0E9B2E8CDBBA /* SocketLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = Source/SocketIO/Util/SocketLogger.swift; sourceTree = "<group>"; };
-		08C8820B50D8CA0ACD8B24C91C6E2761 /* Pods-FedimosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		03D93EEAFDB94558ED4C8E6248202628 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046E4BC5B8D60E29DBAEE04FA6825B66 /* Pods_FedimosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FedimosUITests.framework; path = "Pods-FedimosUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		056BE9DE0394BE90BA2B7CF32C09B858 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		0BE619744514FAEC2E08FA4CE40F6B34 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SocketIO/Util/SSLSecurity.swift; sourceTree = "<group>"; };
+		0C0669D3CAB73C1772518B5DF8952525 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F8547C81517BADE57D79FA86ACB1D89 /* Pods-Fedimos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fedimos-umbrella.h"; sourceTree = "<group>"; };
-		11729895D5C70B2B81C5AB7713DA44A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		138DC13A791C99DB10B3147037DCF91D /* SocketEngineSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = Source/SocketIO/Engine/SocketEngineSpec.swift; sourceTree = "<group>"; };
-		155F2B60ADC61F985D2011A9C5A9A04A /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientConfiguration.swift; path = Source/SocketIO/Client/SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
-		17C6E39BC8C36CB6D51DE69C50741D2E /* SocketIOClientOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = Source/SocketIO/Client/SocketIOClientOption.swift; sourceTree = "<group>"; };
-		21D62A957863D677CE5B824F93C294B6 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
-		24358E39361EB051BB15D809E6A47777 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = Source/SocketIO/Client/SocketIOClientSpec.swift; sourceTree = "<group>"; };
-		2A01B7D044B0C033C802BDD51BF2F843 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = Source/SocketIO/Ack/SocketAckEmitter.swift; sourceTree = "<group>"; };
-		2B7D8012EE5AE540D7EAF490860CA202 /* SocketEngineClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = Source/SocketIO/Engine/SocketEngineClient.swift; sourceTree = "<group>"; };
-		2C91378A7F3D2FE9049C579DAC18E34B /* Pods-FedimosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2FEB1C3D3973060F7E2D03F9B57BC5FC /* Pods-Fedimos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fedimos-dummy.m"; sourceTree = "<group>"; };
-		30FEEEB0A3EF719B1CF6286BE722802A /* SocketStringReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = Source/SocketIO/Util/SocketStringReader.swift; sourceTree = "<group>"; };
-		33F59B16486E292360BFACD03C46462F /* Pods-FedimosTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosTests-resources.sh"; sourceTree = "<group>"; };
-		4061BFB689638EEA5CD040A0FD38A0BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41001185BB6A098D9256E047BFE27DB3 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43E1A6D526F1531237DB3130FA51F57B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		450C8C8361702958A5AC2D60B0B29A41 /* Pods_FedimosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FedimosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		455C4E44BCEAF9C89660D02F28735D2D /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineWebsocket.swift; path = Source/SocketIO/Engine/SocketEngineWebsocket.swift; sourceTree = "<group>"; };
-		46ADE6D9FF1B316978BA893663D34189 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = Source/SocketIO/Engine/SocketEnginePacketType.swift; sourceTree = "<group>"; };
-		46C5FC9AD1F1ADCE0F65B58FA6C4EA4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A99A674ED67A06B84A4FF4B4A7A4AE6 /* SocketEnginePollable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePollable.swift; path = Source/SocketIO/Engine/SocketEnginePollable.swift; sourceTree = "<group>"; };
-		4F7D3A2771A481F05EC9306F09B4A147 /* SocketParsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketParsable.swift; path = Source/SocketIO/Parse/SocketParsable.swift; sourceTree = "<group>"; };
-		54BF945CDCAB8FFA12F6733F05E087C3 /* Pods_FedimosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FedimosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59084113996BD1D38F8FE9DE9A3DCDD5 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
-		5AB1F752608938215449563E343A8764 /* Pods-FedimosTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FedimosTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BADBEC7492438FFB42254069EE6C3A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D35C0584F172FD9BB4B4B22C7F3E40D /* Pods-FedimosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FedimosTests-umbrella.h"; sourceTree = "<group>"; };
-		651E38EE3AC6EDAEB55D3830CB53D1AA /* Pods-Fedimos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fedimos-acknowledgements.plist"; sourceTree = "<group>"; };
-		704AF2AA10D6B471F8573AD9E2508A88 /* Pods-Fedimos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fedimos-resources.sh"; sourceTree = "<group>"; };
-		75B8F56E3B844A893CDD98ABC30CCCE3 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = Source/SocketIO/Client/SocketAnyEvent.swift; sourceTree = "<group>"; };
-		763D01E758618AD05C176B7AC79AE8EF /* Pods-FedimosUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FedimosUITests-umbrella.h"; sourceTree = "<group>"; };
-		768838E3ED452375F13B66B7575912D2 /* Pods-FedimosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FedimosTests-dummy.m"; sourceTree = "<group>"; };
-		76FDF347C7C03D681547C83317B0FFFD /* Pods-FedimosUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FedimosUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7AA5E2526F4632E045F9E6E800C948BE /* Pods-FedimosUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosUITests-frameworks.sh"; sourceTree = "<group>"; };
-		81A3C751609E1421FD29A43A1ADC5DB5 /* SocketEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = Source/SocketIO/Engine/SocketEngine.swift; sourceTree = "<group>"; };
-		854F0B45D4C657D653E1983C4F9E2116 /* SocketManagerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManagerSpec.swift; path = Source/SocketIO/Manager/SocketManagerSpec.swift; sourceTree = "<group>"; };
-		874B14B018CC4A1584572C1572ADA448 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SocketIO/Util/SSLSecurity.swift; sourceTree = "<group>"; };
-		8C6B87A84131E87B03DDF2D6095DA38C /* Pods-FedimosUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FedimosUITests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96905CE4F3766162269001F2B1273344 /* Socket.IO-Client-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Socket.IO-Client-Swift.modulemap"; sourceTree = "<group>"; };
-		98D0F28A5AC6E49859E014D1E6C3395D /* Pods-FedimosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A77134780A564D939CB053D46FF893A /* SocketIOClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = Source/SocketIO/Client/SocketIOClient.swift; sourceTree = "<group>"; };
-		9C52CC2A39DB7C8CB8C0642F5130A427 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
-		9DBF451B8B8DBBE3003C41F20418B2F8 /* SocketPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = Source/SocketIO/Parse/SocketPacket.swift; sourceTree = "<group>"; };
-		9E92294182EA266C4B17FB279F439875 /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
-		9F3E8423F43577DC082D4E6B00CB6B27 /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
-		A0A82E9CBC30186DC835CE104F103297 /* Pods-FedimosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FedimosTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2A409558262EE9035A8BD5D3F47F290 /* Pods-FedimosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosTests.release.xcconfig"; sourceTree = "<group>"; };
-		A45E2B96B7DF22F02684DA8EC27BEC8D /* SocketTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = Source/SocketIO/Util/SocketTypes.swift; sourceTree = "<group>"; };
-		A4C8571466A29780B9F00814802751F3 /* Socket.IO-Client-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.xcconfig"; sourceTree = "<group>"; };
-		A5901E93A99D664C4C9D96D5922DF6EA /* Pods-Fedimos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fedimos-frameworks.sh"; sourceTree = "<group>"; };
-		A5FEC6F628B9D79466D619E70D68B5A2 /* Pods-Fedimos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fedimos.modulemap"; sourceTree = "<group>"; };
-		B6EB60A53C6910656989A69024C8B922 /* SocketRawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketRawView.swift; path = Source/SocketIO/Client/SocketRawView.swift; sourceTree = "<group>"; };
-		B957D70CCE9A4F1806B6379827CB8E23 /* SocketManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManager.swift; path = Source/SocketIO/Manager/SocketManager.swift; sourceTree = "<group>"; };
-		C28E399AFC3284885F55CA3E144FD73D /* Pods-FedimosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FedimosTests.modulemap"; sourceTree = "<group>"; };
-		C363C6429AAF196F33938ED33BC9ACA5 /* Pods-Fedimos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fedimos.debug.xcconfig"; sourceTree = "<group>"; };
-		C5D532887D58B4F5FA96D1BF27B6B529 /* Pods_Fedimos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fedimos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6AF3C1C98E9075DEDB5B2214B739E4F /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
-		C86561D711CE487D5D61BDDB079C472B /* Pods-FedimosUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FedimosUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C8D8BF598EB180C54B68B100DA5FE226 /* Pods-Fedimos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fedimos.release.xcconfig"; sourceTree = "<group>"; };
-		D07E00D6D230C78FD0A608923E633B88 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
-		D57F1B939FC43F267AE592BEC2699BFF /* Pods-FedimosUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosUITests-resources.sh"; sourceTree = "<group>"; };
-		D6DDA5F673BE25E92BA7F5140B1FB676 /* Socket.IO-Client-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-umbrella.h"; sourceTree = "<group>"; };
-		D7FD8335DFE119AF0E50232D16B77488 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
-		DEDDE3FAC6E09A8C57C8864835F58FB0 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF47F70086563E1C3F6A2FA147D35555 /* Pods-FedimosTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosTests-frameworks.sh"; sourceTree = "<group>"; };
-		E47353A2BE419AC453BF9D04C42306F0 /* SocketAckManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = Source/SocketIO/Ack/SocketAckManager.swift; sourceTree = "<group>"; };
-		EAFCAF9703A456210A49EC822974A755 /* SocketIOStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOStatus.swift; path = Source/SocketIO/Client/SocketIOStatus.swift; sourceTree = "<group>"; };
+		0F804CD29425709A1A2BB333A4991EDB /* Pods-Fedimos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fedimos-umbrella.h"; sourceTree = "<group>"; };
+		1189C540C0621710DC0504B5B27F9230 /* Pods-Fedimos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fedimos.modulemap"; sourceTree = "<group>"; };
+		1556A1FEDE7C4A7E0D750ACCBDA92110 /* Pods_FedimosConnectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FedimosConnectionTests.framework; path = "Pods-FedimosConnectionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		164E3682EC106FE6D3180D6E02407006 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = Source/SocketIO/Client/SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		16D1E41A0590DCF4130F34617287ED66 /* SocketLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = Source/SocketIO/Util/SocketLogger.swift; sourceTree = "<group>"; };
+		18A2F7634F0313213F98B6778BE1D15C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2081FA97EC589731ED143879E3C286C5 /* SocketExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketIO/Util/SocketExtensions.swift; sourceTree = "<group>"; };
+		219FF8FA8B0D3FE90D55C42DF981293C /* SocketIOStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOStatus.swift; path = Source/SocketIO/Client/SocketIOStatus.swift; sourceTree = "<group>"; };
+		227030A737CD723FBC9DC8CF268E7603 /* Pods-Fedimos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fedimos-acknowledgements.plist"; sourceTree = "<group>"; };
+		24D47A1A3301E0646E3E30331435ACC6 /* SocketEngineSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = Source/SocketIO/Engine/SocketEngineSpec.swift; sourceTree = "<group>"; };
+		2905B57F2D48A7A88901AF1A512B1956 /* SocketPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = Source/SocketIO/Parse/SocketPacket.swift; sourceTree = "<group>"; };
+		29D6DB80D0EA3CA411A356C039F61D0D /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = Source/SocketIO/Engine/SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		2BDE203E4801129A22156AA5C6F4E51B /* Pods-FedimosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FedimosTests-umbrella.h"; sourceTree = "<group>"; };
+		2C110CD2524D9511C19B462648439058 /* Socket.IO-Client-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-umbrella.h"; sourceTree = "<group>"; };
+		2CFA672AC6426D360990F96889CFC82C /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3E9A2F84FC6B1FCD93CEA1C8C36913 /* Pods-FedimosUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosUITests-resources.sh"; sourceTree = "<group>"; };
+		33B1E53D219BCB907628ACE719E6077F /* Pods-FedimosConnection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FedimosConnection-dummy.m"; sourceTree = "<group>"; };
+		34354E185C7A0455B1508C062D41052F /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
+		3CE1C558E7DFA5CC820D5294781B5210 /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientConfiguration.swift; path = Source/SocketIO/Client/SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		3E3EB73D30B06D66B8C63CB3FFA74702 /* SocketEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = Source/SocketIO/Engine/SocketEngine.swift; sourceTree = "<group>"; };
+		423164BA88A191CD56E6A9F270F75ADC /* SocketStringReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = Source/SocketIO/Util/SocketStringReader.swift; sourceTree = "<group>"; };
+		4261E6886D626D30F903466DEEEFFEA3 /* SocketManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManager.swift; path = Source/SocketIO/Manager/SocketManager.swift; sourceTree = "<group>"; };
+		43CE2CB758FDE9463AD78597B26EF913 /* Pods-FedimosUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FedimosUITests.modulemap"; sourceTree = "<group>"; };
+		44DA3B09AEA9D8759830BFCC0B26E556 /* Pods-Fedimos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fedimos-frameworks.sh"; sourceTree = "<group>"; };
+		47718EFDEC89608446B1B70B85D21830 /* Pods-FedimosConnection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FedimosConnection.modulemap"; sourceTree = "<group>"; };
+		49DFD5D72852DEF10CCA13151BFDD87D /* Pods-Fedimos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fedimos.release.xcconfig"; sourceTree = "<group>"; };
+		4A90A518C3CAAA7131F8154CEC480E0A /* Pods_FedimosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FedimosTests.framework; path = "Pods-FedimosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD56839E8798954BFE8CDCCCAC25491 /* Pods-FedimosConnectionTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosConnectionTests-frameworks.sh"; sourceTree = "<group>"; };
+		50CA5579D78315AB23397E9982E98C70 /* Pods-FedimosTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosTests-frameworks.sh"; sourceTree = "<group>"; };
+		559F7E6B9B7033B533B3BB123C1FF4D0 /* SocketManagerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManagerSpec.swift; path = Source/SocketIO/Manager/SocketManagerSpec.swift; sourceTree = "<group>"; };
+		5AB1BC496B09FF06A5D6606F176AAD99 /* Socket.IO-Client-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Socket.IO-Client-Swift.modulemap"; sourceTree = "<group>"; };
+		5AE5BE3731DFF252DC35EAD2CB43414D /* Pods-FedimosConnectionTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FedimosConnectionTests-dummy.m"; sourceTree = "<group>"; };
+		5B665735E45A6F0CF724159F92864E01 /* Pods-Fedimos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fedimos-resources.sh"; sourceTree = "<group>"; };
+		5EAE86067FE17BD60E63E8D86F254F82 /* Pods-FedimosUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FedimosUITests-umbrella.h"; sourceTree = "<group>"; };
+		60CD0E6874167977DE4FA3999F8DA64E /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketIO.framework; path = "Socket.IO-Client-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61234A03B4F8D19FDA7939702A9545B5 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		63B1C57B214D409B71A4A01AB595AC2C /* Pods-FedimosConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosConnection.release.xcconfig"; sourceTree = "<group>"; };
+		65CACC2B6307D5448375406522CB48FE /* SocketAnyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = Source/SocketIO/Client/SocketAnyEvent.swift; sourceTree = "<group>"; };
+		666670BAE973C9AABC9BA044CB518FBC /* Pods-FedimosUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FedimosUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C34A69844F1D83C4CABD2EEA44EC13E /* Pods-FedimosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		711706B034636AADB0870302EEC5916C /* Pods-FedimosTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosTests-resources.sh"; sourceTree = "<group>"; };
+		74C9006D1A0F8DDCB40CBD16D82C1263 /* SocketRawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketRawView.swift; path = Source/SocketIO/Client/SocketRawView.swift; sourceTree = "<group>"; };
+		76F1846AFB3209AC570E0B53E417823C /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		7E578ABD876DF2D7047D5135257F875F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E7F068497492C1254085933AD1B8653 /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
+		81CD12F813EFA6A8E0A6C59819EF8B3C /* Socket.IO-Client-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.xcconfig"; sourceTree = "<group>"; };
+		88C1A60D710CF2362334C2079151320D /* Pods-FedimosConnection-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosConnection-resources.sh"; sourceTree = "<group>"; };
+		8AA340FD2D4730AB88AB4A5AD577B15B /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineWebsocket.swift; path = Source/SocketIO/Engine/SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		8AC99B3A524883182B2C9F931A0EFFCD /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		8FD8CDC77FAA3CB330904F7BDE880858 /* Pods-FedimosConnectionTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FedimosConnectionTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91A73602D28ADF9585941A610E255AED /* SocketIOClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = Source/SocketIO/Client/SocketIOClient.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95C52E9ADE78749A3F00A313548D898D /* Pods_FedimosConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FedimosConnection.framework; path = "Pods-FedimosConnection.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B523C54D57CAF6A34F8CE90E9C5DD80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20A8338B1070ECBFE5FF75F843049F5 /* Pods-FedimosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A36707EC0E976FB4F6A232EB2BD7950E /* SocketAckManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = Source/SocketIO/Ack/SocketAckManager.swift; sourceTree = "<group>"; };
+		A7433BF23F21666E1383DD6A11991F28 /* Pods-FedimosUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FedimosUITests-dummy.m"; sourceTree = "<group>"; };
+		A90C442081FE9782D747C423F5BB46B0 /* SocketEventHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = Source/SocketIO/Client/SocketEventHandler.swift; sourceTree = "<group>"; };
+		A91C1C9C4BF2382AAD87908FBFFD6B8B /* Pods-FedimosUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FedimosUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF627C505B95E7CF71D8293BABFF8074 /* SocketEngineClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = Source/SocketIO/Engine/SocketEngineClient.swift; sourceTree = "<group>"; };
+		B010B36BC6D8AA896ADD10D708A77CEF /* Pods-FedimosConnectionTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosConnectionTests-resources.sh"; sourceTree = "<group>"; };
+		B37F7D5220F7145EEFFA662AEDFB8B67 /* Pods-FedimosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FedimosTests-dummy.m"; sourceTree = "<group>"; };
+		B3D2979D2B742B7CE75414A94366B689 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FFF29FF2393562F966E5810FD4E118 /* Pods-FedimosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosTests.release.xcconfig"; sourceTree = "<group>"; };
+		C16A87537A79E891DA85DB0AE8948EA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C806E2825D19B346B76A9153FC44A0F2 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		CA73AC2F618CBB4816408C6D83542FFF /* Pods-FedimosConnection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FedimosConnection-umbrella.h"; sourceTree = "<group>"; };
+		CCD22F080760C994DB490E533A0FA0C4 /* Pods-FedimosUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FedimosUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CD7443702074EE64DB5E2D657AA3C7E7 /* SocketIOClientOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = Source/SocketIO/Client/SocketIOClientOption.swift; sourceTree = "<group>"; };
+		D33336CC84E1176EC4914E760BA24658 /* Pods-FedimosConnectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosConnectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D46F30791744C5247A07FEDFB95614CD /* Pods-Fedimos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fedimos-dummy.m"; sourceTree = "<group>"; };
+		D6FF48C7C42C9E1163EFCAD3D8ACCC71 /* Pods-Fedimos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fedimos.debug.xcconfig"; sourceTree = "<group>"; };
+		D80240261B1521DC3E937B4F71265589 /* Pods-Fedimos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fedimos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D85E07B10778A996DAAB051E4BF74297 /* Pods-FedimosConnectionTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FedimosConnectionTests.modulemap"; sourceTree = "<group>"; };
+		D8E228A0610F698D66AAD8912FA6EB9D /* Pods-FedimosConnectionTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FedimosConnectionTests-umbrella.h"; sourceTree = "<group>"; };
+		D8E846A8DFC26A8C5D4A595D8D09ADB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6076F89793B3C1FFDE5BBA296B9FD8 /* Pods-FedimosConnection-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FedimosConnection-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD8E18144A3A7866B12C9DB456F6588F /* Pods-FedimosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FedimosTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF35AE1E386B75CDC1FA225BF404A0A4 /* SocketEnginePollable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePollable.swift; path = Source/SocketIO/Engine/SocketEnginePollable.swift; sourceTree = "<group>"; };
+		E55BF85B95DDFA616138BD1FB8F26E69 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		E62473A1461C9C88F4ACC7C1561E579F /* Pods-FedimosConnectionTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FedimosConnectionTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7816A0861DD055DDB46ADA4B4AF7E23 /* Pods-FedimosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FedimosTests.modulemap"; sourceTree = "<group>"; };
+		E889180ACB71230C3AF7AA247FDB8692 /* Pods-FedimosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF347F751D72932916D9C43C7EB3FBEF /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		EFAE971BEB6703B51A4DAF81D9651F29 /* Pods-FedimosConnectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosConnectionTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0F956073C535A3719BE5CEF9E88E410 /* SocketParsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketParsable.swift; path = Source/SocketIO/Parse/SocketParsable.swift; sourceTree = "<group>"; };
 		F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F56B005375C5D701A515A7C4519905F5 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/SSLSecurity.swift; sourceTree = "<group>"; };
-		F8FC2021A00C3EEC011AA37AAFB540CA /* SocketExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketIO/Util/SocketExtensions.swift; sourceTree = "<group>"; };
-		F940ED6DC978C883B11F88EA50D84061 /* Pods-FedimosUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FedimosUITests.modulemap"; sourceTree = "<group>"; };
-		FAB29EC7E9A253124F836FAC3773DA27 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		F1F83FE88069D82AB56A64530F9163BC /* Pods-FedimosConnection-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FedimosConnection-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F22FC419EEAB05AC1183D2ABC4ED7A9C /* SocketTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = Source/SocketIO/Util/SocketTypes.swift; sourceTree = "<group>"; };
+		F26F2E8714B82B1E21381FD475BFFB58 /* Pods-FedimosConnection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FedimosConnection.debug.xcconfig"; sourceTree = "<group>"; };
+		F9DD42085C01E62C098A0D8E9851F240 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		FC76A46FD39B3B954B68F2C7A90708A7 /* Pods-FedimosTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FedimosTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FEBDFA365884AD373D8B1DCC30B0EA99 /* Pods_Fedimos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Fedimos.framework; path = "Pods-Fedimos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D3F0C824453C9E447DB4B82D2840E /* SocketAckEmitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = Source/SocketIO/Ack/SocketAckEmitter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +250,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A6FBEBB17B5222412388BA88D21E2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EFFDB044A440AB2F7052A5FA15BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38FE84312EF50E7E2C1FC250111E997 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,80 +286,126 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5D0F4086085C5918540B87AFC4CA15B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C7FD025A96446A68D021511646CD6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B1A55C67FDCC44476A80BC6EDEA56B /* Pods-Fedimos */ = {
+		0CAC817F3A9B6BBB194E780E661D16A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11729895D5C70B2B81C5AB7713DA44A2 /* Info.plist */,
-				A5FEC6F628B9D79466D619E70D68B5A2 /* Pods-Fedimos.modulemap */,
-				0171C76D5E6534EC0A1151D1CEF3DBC8 /* Pods-Fedimos-acknowledgements.markdown */,
-				651E38EE3AC6EDAEB55D3830CB53D1AA /* Pods-Fedimos-acknowledgements.plist */,
-				2FEB1C3D3973060F7E2D03F9B57BC5FC /* Pods-Fedimos-dummy.m */,
-				A5901E93A99D664C4C9D96D5922DF6EA /* Pods-Fedimos-frameworks.sh */,
-				704AF2AA10D6B471F8573AD9E2508A88 /* Pods-Fedimos-resources.sh */,
-				0F8547C81517BADE57D79FA86ACB1D89 /* Pods-Fedimos-umbrella.h */,
-				C363C6429AAF196F33938ED33BC9ACA5 /* Pods-Fedimos.debug.xcconfig */,
-				C8D8BF598EB180C54B68B100DA5FE226 /* Pods-Fedimos.release.xcconfig */,
-			);
-			name = "Pods-Fedimos";
-			path = "Target Support Files/Pods-Fedimos";
-			sourceTree = "<group>";
-		};
-		2EFBC48F09F952582CF7EEF9165FB2A9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C5D532887D58B4F5FA96D1BF27B6B529 /* Pods_Fedimos.framework */,
-				450C8C8361702958A5AC2D60B0B29A41 /* Pods_FedimosTests.framework */,
-				54BF945CDCAB8FFA12F6733F05E087C3 /* Pods_FedimosUITests.framework */,
-				DEDDE3FAC6E09A8C57C8864835F58FB0 /* SocketIO.framework */,
-				41001185BB6A098D9256E047BFE27DB3 /* Starscream.framework */,
+				FEBDFA365884AD373D8B1DCC30B0EA99 /* Pods_Fedimos.framework */,
+				95C52E9ADE78749A3F00A313548D898D /* Pods_FedimosConnection.framework */,
+				1556A1FEDE7C4A7E0D750ACCBDA92110 /* Pods_FedimosConnectionTests.framework */,
+				4A90A518C3CAAA7131F8154CEC480E0A /* Pods_FedimosTests.framework */,
+				046E4BC5B8D60E29DBAEE04FA6825B66 /* Pods_FedimosUITests.framework */,
+				60CD0E6874167977DE4FA3999F8DA64E /* SocketIO.framework */,
+				2CFA672AC6426D360990F96889CFC82C /* Starscream.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3EB19BCD4B3F55080FA0931A785849F7 /* Targets Support Files */ = {
+		2B78A5EF3DFCF2FCA837F51D6EBD720A /* Socket.IO-Client-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				13B1A55C67FDCC44476A80BC6EDEA56B /* Pods-Fedimos */,
-				CABFB879307596377D31E3B4A982FB73 /* Pods-FedimosTests */,
-				B3F511E0E172C287386AE503E2F43614 /* Pods-FedimosUITests */,
+				FF1D3F0C824453C9E447DB4B82D2840E /* SocketAckEmitter.swift */,
+				A36707EC0E976FB4F6A232EB2BD7950E /* SocketAckManager.swift */,
+				65CACC2B6307D5448375406522CB48FE /* SocketAnyEvent.swift */,
+				3E3EB73D30B06D66B8C63CB3FFA74702 /* SocketEngine.swift */,
+				AF627C505B95E7CF71D8293BABFF8074 /* SocketEngineClient.swift */,
+				29D6DB80D0EA3CA411A356C039F61D0D /* SocketEnginePacketType.swift */,
+				DF35AE1E386B75CDC1FA225BF404A0A4 /* SocketEnginePollable.swift */,
+				24D47A1A3301E0646E3E30331435ACC6 /* SocketEngineSpec.swift */,
+				8AA340FD2D4730AB88AB4A5AD577B15B /* SocketEngineWebsocket.swift */,
+				A90C442081FE9782D747C423F5BB46B0 /* SocketEventHandler.swift */,
+				2081FA97EC589731ED143879E3C286C5 /* SocketExtensions.swift */,
+				91A73602D28ADF9585941A610E255AED /* SocketIOClient.swift */,
+				3CE1C558E7DFA5CC820D5294781B5210 /* SocketIOClientConfiguration.swift */,
+				CD7443702074EE64DB5E2D657AA3C7E7 /* SocketIOClientOption.swift */,
+				164E3682EC106FE6D3180D6E02407006 /* SocketIOClientSpec.swift */,
+				219FF8FA8B0D3FE90D55C42DF981293C /* SocketIOStatus.swift */,
+				16D1E41A0590DCF4130F34617287ED66 /* SocketLogger.swift */,
+				4261E6886D626D30F903466DEEEFFEA3 /* SocketManager.swift */,
+				559F7E6B9B7033B533B3BB123C1FF4D0 /* SocketManagerSpec.swift */,
+				2905B57F2D48A7A88901AF1A512B1956 /* SocketPacket.swift */,
+				F0F956073C535A3719BE5CEF9E88E410 /* SocketParsable.swift */,
+				74C9006D1A0F8DDCB40CBD16D82C1263 /* SocketRawView.swift */,
+				423164BA88A191CD56E6A9F270F75ADC /* SocketStringReader.swift */,
+				F22FC419EEAB05AC1183D2ABC4ED7A9C /* SocketTypes.swift */,
+				0BE619744514FAEC2E08FA4CE40F6B34 /* SSLSecurity.swift */,
+				47EB416A985960ED37B43737FC38F445 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = "Socket.IO-Client-Swift";
+			path = "Socket.IO-Client-Swift";
 			sourceTree = "<group>";
 		};
-		515E8BAEB46C83EA45C177C21F83B713 /* Socket.IO-Client-Swift */ = {
+		47EB416A985960ED37B43737FC38F445 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A01B7D044B0C033C802BDD51BF2F843 /* SocketAckEmitter.swift */,
-				E47353A2BE419AC453BF9D04C42306F0 /* SocketAckManager.swift */,
-				75B8F56E3B844A893CDD98ABC30CCCE3 /* SocketAnyEvent.swift */,
-				81A3C751609E1421FD29A43A1ADC5DB5 /* SocketEngine.swift */,
-				2B7D8012EE5AE540D7EAF490860CA202 /* SocketEngineClient.swift */,
-				46ADE6D9FF1B316978BA893663D34189 /* SocketEnginePacketType.swift */,
-				4A99A674ED67A06B84A4FF4B4A7A4AE6 /* SocketEnginePollable.swift */,
-				138DC13A791C99DB10B3147037DCF91D /* SocketEngineSpec.swift */,
-				455C4E44BCEAF9C89660D02F28735D2D /* SocketEngineWebsocket.swift */,
-				06993A323D2E507FA63A1D2D33F1AAB5 /* SocketEventHandler.swift */,
-				F8FC2021A00C3EEC011AA37AAFB540CA /* SocketExtensions.swift */,
-				9A77134780A564D939CB053D46FF893A /* SocketIOClient.swift */,
-				155F2B60ADC61F985D2011A9C5A9A04A /* SocketIOClientConfiguration.swift */,
-				17C6E39BC8C36CB6D51DE69C50741D2E /* SocketIOClientOption.swift */,
-				24358E39361EB051BB15D809E6A47777 /* SocketIOClientSpec.swift */,
-				EAFCAF9703A456210A49EC822974A755 /* SocketIOStatus.swift */,
-				083D90EAA19406E80FAA0E9B2E8CDBBA /* SocketLogger.swift */,
-				B957D70CCE9A4F1806B6379827CB8E23 /* SocketManager.swift */,
-				854F0B45D4C657D653E1983C4F9E2116 /* SocketManagerSpec.swift */,
-				9DBF451B8B8DBBE3003C41F20418B2F8 /* SocketPacket.swift */,
-				4F7D3A2771A481F05EC9306F09B4A147 /* SocketParsable.swift */,
-				B6EB60A53C6910656989A69024C8B922 /* SocketRawView.swift */,
-				30FEEEB0A3EF719B1CF6286BE722802A /* SocketStringReader.swift */,
-				A45E2B96B7DF22F02684DA8EC27BEC8D /* SocketTypes.swift */,
-				874B14B018CC4A1584572C1572ADA448 /* SSLSecurity.swift */,
-				81B0191CD185562A52A5D49944DC8200 /* Support Files */,
+				C16A87537A79E891DA85DB0AE8948EA8 /* Info.plist */,
+				5AB1BC496B09FF06A5D6606F176AAD99 /* Socket.IO-Client-Swift.modulemap */,
+				81CD12F813EFA6A8E0A6C59819EF8B3C /* Socket.IO-Client-Swift.xcconfig */,
+				7E7F068497492C1254085933AD1B8653 /* Socket.IO-Client-Swift-dummy.m */,
+				34354E185C7A0455B1508C062D41052F /* Socket.IO-Client-Swift-prefix.pch */,
+				2C110CD2524D9511C19B462648439058 /* Socket.IO-Client-Swift-umbrella.h */,
 			);
-			path = "Socket.IO-Client-Swift";
+			name = "Support Files";
+			path = "../Target Support Files/Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		4C2CB5A378F2F601FEEB0787E45AD8D8 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				61234A03B4F8D19FDA7939702A9545B5 /* Compression.swift */,
+				C806E2825D19B346B76A9153FC44A0F2 /* SSLClientCertificate.swift */,
+				F9DD42085C01E62C098A0D8E9851F240 /* SSLSecurity.swift */,
+				76F1846AFB3209AC570E0B53E417823C /* WebSocket.swift */,
+				E158FD68B2DF3C8187448CA0F96A8BA4 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		765557E04960E23E57417D421A84E8BD /* Pods-FedimosConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A2F7634F0313213F98B6778BE1D15C /* Info.plist */,
+				D85E07B10778A996DAAB051E4BF74297 /* Pods-FedimosConnectionTests.modulemap */,
+				8FD8CDC77FAA3CB330904F7BDE880858 /* Pods-FedimosConnectionTests-acknowledgements.markdown */,
+				E62473A1461C9C88F4ACC7C1561E579F /* Pods-FedimosConnectionTests-acknowledgements.plist */,
+				5AE5BE3731DFF252DC35EAD2CB43414D /* Pods-FedimosConnectionTests-dummy.m */,
+				4AD56839E8798954BFE8CDCCCAC25491 /* Pods-FedimosConnectionTests-frameworks.sh */,
+				B010B36BC6D8AA896ADD10D708A77CEF /* Pods-FedimosConnectionTests-resources.sh */,
+				D8E228A0610F698D66AAD8912FA6EB9D /* Pods-FedimosConnectionTests-umbrella.h */,
+				D33336CC84E1176EC4914E760BA24658 /* Pods-FedimosConnectionTests.debug.xcconfig */,
+				EFAE971BEB6703B51A4DAF81D9651F29 /* Pods-FedimosConnectionTests.release.xcconfig */,
+			);
+			name = "Pods-FedimosConnectionTests";
+			path = "Target Support Files/Pods-FedimosConnectionTests";
+			sourceTree = "<group>";
+		};
+		76D6F02E9E777588B85CF11125F7C1E6 /* Pods-Fedimos */ = {
+			isa = PBXGroup;
+			children = (
+				B3D2979D2B742B7CE75414A94366B689 /* Info.plist */,
+				1189C540C0621710DC0504B5B27F9230 /* Pods-Fedimos.modulemap */,
+				D80240261B1521DC3E937B4F71265589 /* Pods-Fedimos-acknowledgements.markdown */,
+				227030A737CD723FBC9DC8CF268E7603 /* Pods-Fedimos-acknowledgements.plist */,
+				D46F30791744C5247A07FEDFB95614CD /* Pods-Fedimos-dummy.m */,
+				44DA3B09AEA9D8759830BFCC0B26E556 /* Pods-Fedimos-frameworks.sh */,
+				5B665735E45A6F0CF724159F92864E01 /* Pods-Fedimos-resources.sh */,
+				0F804CD29425709A1A2BB333A4991EDB /* Pods-Fedimos-umbrella.h */,
+				D6FF48C7C42C9E1163EFCAD3D8ACCC71 /* Pods-Fedimos.debug.xcconfig */,
+				49DFD5D72852DEF10CCA13151BFDD87D /* Pods-Fedimos.release.xcconfig */,
+			);
+			name = "Pods-Fedimos";
+			path = "Target Support Files/Pods-Fedimos";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -295,62 +413,64 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */,
-				84AEDDFA0362ACFC3CDB040B7924C438 /* Pods */,
-				2EFBC48F09F952582CF7EEF9165FB2A9 /* Products */,
-				3EB19BCD4B3F55080FA0931A785849F7 /* Targets Support Files */,
+				8C9FF0BC7DA9601CD711F3F0C26BDE2D /* Pods */,
+				0CAC817F3A9B6BBB194E780E661D16A6 /* Products */,
+				86DC1D0A8DC79E4B69D0EC4D1C04F27E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81B0191CD185562A52A5D49944DC8200 /* Support Files */ = {
+		86DC1D0A8DC79E4B69D0EC4D1C04F27E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46C5FC9AD1F1ADCE0F65B58FA6C4EA4B /* Info.plist */,
-				96905CE4F3766162269001F2B1273344 /* Socket.IO-Client-Swift.modulemap */,
-				A4C8571466A29780B9F00814802751F3 /* Socket.IO-Client-Swift.xcconfig */,
-				9E92294182EA266C4B17FB279F439875 /* Socket.IO-Client-Swift-dummy.m */,
-				9F3E8423F43577DC082D4E6B00CB6B27 /* Socket.IO-Client-Swift-prefix.pch */,
-				D6DDA5F673BE25E92BA7F5140B1FB676 /* Socket.IO-Client-Swift-umbrella.h */,
+				76D6F02E9E777588B85CF11125F7C1E6 /* Pods-Fedimos */,
+				E70306E8479BEA956CB472ABF78598E1 /* Pods-FedimosConnection */,
+				765557E04960E23E57417D421A84E8BD /* Pods-FedimosConnectionTests */,
+				9EC5062A92F1289041E832726840FA20 /* Pods-FedimosTests */,
+				AACE325D1DC24EB0DAE01F280F3BFFD7 /* Pods-FedimosUITests */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Socket.IO-Client-Swift";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		82F579FDA21EF10B2151EFE6A02300D7 /* Support Files */ = {
+		8C9FF0BC7DA9601CD711F3F0C26BDE2D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5BADBEC7492438FFB42254069EE6C3A7 /* Info.plist */,
-				9C52CC2A39DB7C8CB8C0642F5130A427 /* Starscream.modulemap */,
-				D07E00D6D230C78FD0A608923E633B88 /* Starscream.xcconfig */,
-				59084113996BD1D38F8FE9DE9A3DCDD5 /* Starscream-dummy.m */,
-				FAB29EC7E9A253124F836FAC3773DA27 /* Starscream-prefix.pch */,
-				D7FD8335DFE119AF0E50232D16B77488 /* Starscream-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Starscream";
-			sourceTree = "<group>";
-		};
-		84AEDDFA0362ACFC3CDB040B7924C438 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				515E8BAEB46C83EA45C177C21F83B713 /* Socket.IO-Client-Swift */,
-				F94F7DF9320FC945D7B445C165D4876B /* Starscream */,
+				2B78A5EF3DFCF2FCA837F51D6EBD720A /* Socket.IO-Client-Swift */,
+				4C2CB5A378F2F601FEEB0787E45AD8D8 /* Starscream */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B3F511E0E172C287386AE503E2F43614 /* Pods-FedimosUITests */ = {
+		9EC5062A92F1289041E832726840FA20 /* Pods-FedimosTests */ = {
 			isa = PBXGroup;
 			children = (
-				43E1A6D526F1531237DB3130FA51F57B /* Info.plist */,
-				F940ED6DC978C883B11F88EA50D84061 /* Pods-FedimosUITests.modulemap */,
-				76FDF347C7C03D681547C83317B0FFFD /* Pods-FedimosUITests-acknowledgements.markdown */,
-				C86561D711CE487D5D61BDDB079C472B /* Pods-FedimosUITests-acknowledgements.plist */,
-				8C6B87A84131E87B03DDF2D6095DA38C /* Pods-FedimosUITests-dummy.m */,
-				7AA5E2526F4632E045F9E6E800C948BE /* Pods-FedimosUITests-frameworks.sh */,
-				D57F1B939FC43F267AE592BEC2699BFF /* Pods-FedimosUITests-resources.sh */,
-				763D01E758618AD05C176B7AC79AE8EF /* Pods-FedimosUITests-umbrella.h */,
-				2C91378A7F3D2FE9049C579DAC18E34B /* Pods-FedimosUITests.debug.xcconfig */,
-				08C8820B50D8CA0ACD8B24C91C6E2761 /* Pods-FedimosUITests.release.xcconfig */,
+				9B523C54D57CAF6A34F8CE90E9C5DD80 /* Info.plist */,
+				E7816A0861DD055DDB46ADA4B4AF7E23 /* Pods-FedimosTests.modulemap */,
+				FC76A46FD39B3B954B68F2C7A90708A7 /* Pods-FedimosTests-acknowledgements.markdown */,
+				DD8E18144A3A7866B12C9DB456F6588F /* Pods-FedimosTests-acknowledgements.plist */,
+				B37F7D5220F7145EEFFA662AEDFB8B67 /* Pods-FedimosTests-dummy.m */,
+				50CA5579D78315AB23397E9982E98C70 /* Pods-FedimosTests-frameworks.sh */,
+				711706B034636AADB0870302EEC5916C /* Pods-FedimosTests-resources.sh */,
+				2BDE203E4801129A22156AA5C6F4E51B /* Pods-FedimosTests-umbrella.h */,
+				E889180ACB71230C3AF7AA247FDB8692 /* Pods-FedimosTests.debug.xcconfig */,
+				B9FFF29FF2393562F966E5810FD4E118 /* Pods-FedimosTests.release.xcconfig */,
+			);
+			name = "Pods-FedimosTests";
+			path = "Target Support Files/Pods-FedimosTests";
+			sourceTree = "<group>";
+		};
+		AACE325D1DC24EB0DAE01F280F3BFFD7 /* Pods-FedimosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E578ABD876DF2D7047D5135257F875F /* Info.plist */,
+				43CE2CB758FDE9463AD78597B26EF913 /* Pods-FedimosUITests.modulemap */,
+				A91C1C9C4BF2382AAD87908FBFFD6B8B /* Pods-FedimosUITests-acknowledgements.markdown */,
+				666670BAE973C9AABC9BA044CB518FBC /* Pods-FedimosUITests-acknowledgements.plist */,
+				A7433BF23F21666E1383DD6A11991F28 /* Pods-FedimosUITests-dummy.m */,
+				CCD22F080760C994DB490E533A0FA0C4 /* Pods-FedimosUITests-frameworks.sh */,
+				2D3E9A2F84FC6B1FCD93CEA1C8C36913 /* Pods-FedimosUITests-resources.sh */,
+				5EAE86067FE17BD60E63E8D86F254F82 /* Pods-FedimosUITests-umbrella.h */,
+				A20A8338B1070ECBFE5FF75F843049F5 /* Pods-FedimosUITests.debug.xcconfig */,
+				6C34A69844F1D83C4CABD2EEA44EC13E /* Pods-FedimosUITests.release.xcconfig */,
 			);
 			name = "Pods-FedimosUITests";
 			path = "Target Support Files/Pods-FedimosUITests";
@@ -365,22 +485,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CABFB879307596377D31E3B4A982FB73 /* Pods-FedimosTests */ = {
+		E158FD68B2DF3C8187448CA0F96A8BA4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4061BFB689638EEA5CD040A0FD38A0BB /* Info.plist */,
-				C28E399AFC3284885F55CA3E144FD73D /* Pods-FedimosTests.modulemap */,
-				5AB1F752608938215449563E343A8764 /* Pods-FedimosTests-acknowledgements.markdown */,
-				A0A82E9CBC30186DC835CE104F103297 /* Pods-FedimosTests-acknowledgements.plist */,
-				768838E3ED452375F13B66B7575912D2 /* Pods-FedimosTests-dummy.m */,
-				DF47F70086563E1C3F6A2FA147D35555 /* Pods-FedimosTests-frameworks.sh */,
-				33F59B16486E292360BFACD03C46462F /* Pods-FedimosTests-resources.sh */,
-				5D35C0584F172FD9BB4B4B22C7F3E40D /* Pods-FedimosTests-umbrella.h */,
-				98D0F28A5AC6E49859E014D1E6C3395D /* Pods-FedimosTests.debug.xcconfig */,
-				A2A409558262EE9035A8BD5D3F47F290 /* Pods-FedimosTests.release.xcconfig */,
+				D8E846A8DFC26A8C5D4A595D8D09ADB0 /* Info.plist */,
+				EF347F751D72932916D9C43C7EB3FBEF /* Starscream.modulemap */,
+				8AC99B3A524883182B2C9F931A0EFFCD /* Starscream.xcconfig */,
+				0C0669D3CAB73C1772518B5DF8952525 /* Starscream-dummy.m */,
+				E55BF85B95DDFA616138BD1FB8F26E69 /* Starscream-prefix.pch */,
+				056BE9DE0394BE90BA2B7CF32C09B858 /* Starscream-umbrella.h */,
 			);
-			name = "Pods-FedimosTests";
-			path = "Target Support Files/Pods-FedimosTests";
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		E70306E8479BEA956CB472ABF78598E1 /* Pods-FedimosConnection */ = {
+			isa = PBXGroup;
+			children = (
+				03D93EEAFDB94558ED4C8E6248202628 /* Info.plist */,
+				47718EFDEC89608446B1B70B85D21830 /* Pods-FedimosConnection.modulemap */,
+				F1F83FE88069D82AB56A64530F9163BC /* Pods-FedimosConnection-acknowledgements.markdown */,
+				DA6076F89793B3C1FFDE5BBA296B9FD8 /* Pods-FedimosConnection-acknowledgements.plist */,
+				33B1E53D219BCB907628ACE719E6077F /* Pods-FedimosConnection-dummy.m */,
+				88C1A60D710CF2362334C2079151320D /* Pods-FedimosConnection-resources.sh */,
+				CA73AC2F618CBB4816408C6D83542FFF /* Pods-FedimosConnection-umbrella.h */,
+				F26F2E8714B82B1E21381FD475BFFB58 /* Pods-FedimosConnection.debug.xcconfig */,
+				63B1C57B214D409B71A4A01AB595AC2C /* Pods-FedimosConnection.release.xcconfig */,
+			);
+			name = "Pods-FedimosConnection";
+			path = "Target Support Files/Pods-FedimosConnection";
 			sourceTree = "<group>";
 		};
 		F73D217E75B288FCF69E835DC1DD524A /* iOS */ = {
@@ -391,20 +524,17 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F94F7DF9320FC945D7B445C165D4876B /* Starscream */ = {
-			isa = PBXGroup;
-			children = (
-				C6AF3C1C98E9075DEDB5B2214B739E4F /* Compression.swift */,
-				F56B005375C5D701A515A7C4519905F5 /* SSLSecurity.swift */,
-				21D62A957863D677CE5B824F93C294B6 /* WebSocket.swift */,
-				82F579FDA21EF10B2151EFE6A02300D7 /* Support Files */,
-			);
-			path = Starscream;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4643AAE3BEBB09C9501370EE8067E94E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382C62FBF20E5C1C8257029743F16305 /* Pods-FedimosConnectionTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E0B550E8E3BFB8DAD4822CBCCAEC7D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +548,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E639AFD25714A048213720262E6131C /* Pods-FedimosTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DB710F91DE6BCFDA240E240C46C492 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA861925B95A5F10B11859AF04615E6 /* Pods-FedimosConnection-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +601,7 @@
 			);
 			name = "Pods-FedimosTests";
 			productName = "Pods-FedimosTests";
-			productReference = 450C8C8361702958A5AC2D60B0B29A41 /* Pods_FedimosTests.framework */;
+			productReference = 4A90A518C3CAAA7131F8154CEC480E0A /* Pods_FedimosTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		19BA5DA0AADB14E828E47EC017A3DAD7 /* Pods-Fedimos */ = {
@@ -482,14 +620,14 @@
 			);
 			name = "Pods-Fedimos";
 			productName = "Pods-Fedimos";
-			productReference = C5D532887D58B4F5FA96D1BF27B6B529 /* Pods_Fedimos.framework */;
+			productReference = FEBDFA365884AD373D8B1DCC30B0EA99 /* Pods_Fedimos.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3599D01339BC47FEB0B4A9312D0BC09E /* Starscream */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E245B456A3AF6D6498A4F95E2BC98006 /* Build configuration list for PBXNativeTarget "Starscream" */;
 			buildPhases = (
-				3C5CA1FFECD77964098743BB0F4B7D41 /* Sources */,
+				E566CFF85DA073106B4540741742F1C9 /* Sources */,
 				89BDB518951F93592EBA46DE53CBB3FF /* Frameworks */,
 				D2936A698AA736C039B341C41DECABAA /* Headers */,
 			);
@@ -499,7 +637,7 @@
 			);
 			name = Starscream;
 			productName = Starscream;
-			productReference = 41001185BB6A098D9256E047BFE27DB3 /* Starscream.framework */;
+			productReference = 2CFA672AC6426D360990F96889CFC82C /* Starscream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		39002CCFEFEB53D0A2610E9BE1D5CE1E /* Socket.IO-Client-Swift */ = {
@@ -517,7 +655,7 @@
 			);
 			name = "Socket.IO-Client-Swift";
 			productName = "Socket.IO-Client-Swift";
-			productReference = DEDDE3FAC6E09A8C57C8864835F58FB0 /* SocketIO.framework */;
+			productReference = 60CD0E6874167977DE4FA3999F8DA64E /* SocketIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5EB8A22CE63024F78DC323E4FC1B1FF0 /* Pods-FedimosUITests */ = {
@@ -535,7 +673,46 @@
 			);
 			name = "Pods-FedimosUITests";
 			productName = "Pods-FedimosUITests";
-			productReference = 54BF945CDCAB8FFA12F6733F05E087C3 /* Pods_FedimosUITests.framework */;
+			productReference = 046E4BC5B8D60E29DBAEE04FA6825B66 /* Pods_FedimosUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61DFD0717378EC417B843B0C721902E1 /* Pods-FedimosConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1116A89B1FD7567698B1C3F5158E0CAE /* Build configuration list for PBXNativeTarget "Pods-FedimosConnectionTests" */;
+			buildPhases = (
+				84A62FFF391B467EDE602811F9F45547 /* Sources */,
+				303EFFDB044A440AB2F7052A5FA15BEB /* Frameworks */,
+				4643AAE3BEBB09C9501370EE8067E94E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A08A20F857501D30BE895B4BFBBF185 /* PBXTargetDependency */,
+				3DDA1F09612DC346735357AB317D24E9 /* PBXTargetDependency */,
+				4CE44AF27F6C861DFCDEB308AC1B5DB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-FedimosConnectionTests";
+			productName = "Pods-FedimosConnectionTests";
+			productReference = 1556A1FEDE7C4A7E0D750ACCBDA92110 /* Pods_FedimosConnectionTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		757087E16B95317D90544B90A61900DB /* Pods-FedimosConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A0B99EEC7F5CE139EEC141FCC814E5 /* Build configuration list for PBXNativeTarget "Pods-FedimosConnection" */;
+			buildPhases = (
+				93CD6C9AF8B63B8BC72B9BAF2C79AA2D /* Sources */,
+				F5D0F4086085C5918540B87AFC4CA15B /* Frameworks */,
+				C1DB710F91DE6BCFDA240E240C46C492 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				724AA6DE02DD63B91F9DF30FCAC7EB1F /* PBXTargetDependency */,
+				53B4AEAA8B84E0A40A5AC6FA4E618F19 /* PBXTargetDependency */,
+			);
+			name = "Pods-FedimosConnection";
+			productName = "Pods-FedimosConnection";
+			productReference = 95C52E9ADE78749A3F00A313548D898D /* Pods_FedimosConnection.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -545,7 +722,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -555,11 +732,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 2EFBC48F09F952582CF7EEF9165FB2A9 /* Products */;
+			productRefGroup = 0CAC817F3A9B6BBB194E780E661D16A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				19BA5DA0AADB14E828E47EC017A3DAD7 /* Pods-Fedimos */,
+				757087E16B95317D90544B90A61900DB /* Pods-FedimosConnection */,
+				61DFD0717378EC417B843B0C721902E1 /* Pods-FedimosConnectionTests */,
 				1404E232EAFB5565DFBA404EF8CB526F /* Pods-FedimosTests */,
 				5EB8A22CE63024F78DC323E4FC1B1FF0 /* Pods-FedimosUITests */,
 				39002CCFEFEB53D0A2610E9BE1D5CE1E /* Socket.IO-Client-Swift */,
@@ -577,17 +756,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C5CA1FFECD77964098743BB0F4B7D41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C43AEE5AA29DB15B50D3D0ADF502A376 /* Compression.swift in Sources */,
-				89586CBBABC10036D339CE82457A1AA2 /* SSLSecurity.swift in Sources */,
-				5223C29A44BD0B6D3BF820D3A4A7AAF5 /* Starscream-dummy.m in Sources */,
-				A18D2A832262FB1D4E1EF1B8E329AC03 /* WebSocket.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		73440D13D542AC858672032017C09434 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,11 +764,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84A62FFF391B467EDE602811F9F45547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFA7DA1F9684C37D210F46764F52D9D /* Pods-FedimosConnectionTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CD6C9AF8B63B8BC72B9BAF2C79AA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7519CA52CB0DF3193C8E5C418F93A58 /* Pods-FedimosConnection-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D699F1E54F416E339C8A26DE9BCA5962 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B8BD972F869BC19D5F23CAE36C9C28A /* Pods-FedimosTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E566CFF85DA073106B4540741742F1C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6312C63D63F970E092F988BFEE952D /* Compression.swift in Sources */,
+				F77C7D675C2ED54231B0E56826BAA57F /* SSLClientCertificate.swift in Sources */,
+				61114A42E22466DD49E712C864D4FB3B /* SSLSecurity.swift in Sources */,
+				C48D8FE19EED2CFFB9437129BA4A7E44 /* Starscream-dummy.m in Sources */,
+				BF71D87507729E105173DEFB3A18F6BA /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,17 +848,47 @@
 			target = 19BA5DA0AADB14E828E47EC017A3DAD7 /* Pods-Fedimos */;
 			targetProxy = 227EC6831FCF9ECA4AF1DF9BA1257271 /* PBXContainerItemProxy */;
 		};
+		3DDA1F09612DC346735357AB317D24E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Socket.IO-Client-Swift";
+			target = 39002CCFEFEB53D0A2610E9BE1D5CE1E /* Socket.IO-Client-Swift */;
+			targetProxy = 2FE3A3ACB5B96F2CCD80A6280E8FE8F4 /* PBXContainerItemProxy */;
+		};
+		4CE44AF27F6C861DFCDEB308AC1B5DB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 3599D01339BC47FEB0B4A9312D0BC09E /* Starscream */;
+			targetProxy = 4E9A260118F2F638C437589DBED496BE /* PBXContainerItemProxy */;
+		};
 		4F6B99C75ABB381341E6A1C4D218AE2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
 			target = 3599D01339BC47FEB0B4A9312D0BC09E /* Starscream */;
 			targetProxy = D528D323E6425E71B21DA720DDE19EA6 /* PBXContainerItemProxy */;
 		};
+		53B4AEAA8B84E0A40A5AC6FA4E618F19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 3599D01339BC47FEB0B4A9312D0BC09E /* Starscream */;
+			targetProxy = 8DDF15FC9A4E8185572623EDA634B495 /* PBXContainerItemProxy */;
+		};
 		57C0844F3E0DC999ADAF0B57C5CD020D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
 			target = 3599D01339BC47FEB0B4A9312D0BC09E /* Starscream */;
 			targetProxy = 1934EDDC116090D23912EFBFAB186C9F /* PBXContainerItemProxy */;
+		};
+		724AA6DE02DD63B91F9DF30FCAC7EB1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Socket.IO-Client-Swift";
+			target = 39002CCFEFEB53D0A2610E9BE1D5CE1E /* Socket.IO-Client-Swift */;
+			targetProxy = F5CAE11B795C5A7EFD460A0FCBF30C59 /* PBXContainerItemProxy */;
+		};
+		7A08A20F857501D30BE895B4BFBBF185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FedimosConnection";
+			target = 757087E16B95317D90544B90A61900DB /* Pods-FedimosConnection */;
+			targetProxy = A113A02659357E991CF3CD7ED412959E /* PBXContainerItemProxy */;
 		};
 		CE257E45062F29E2A3ED69F0A914146C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -727,14 +953,53 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
+		1E2AE68D3ECC64415F2ADF7984207256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33336CC84E1176EC4914E760BA24658 /* Pods-FedimosConnectionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FedimosConnectionTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FedimosConnectionTests/Pods-FedimosConnectionTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2295F262615DCF1036E6F968E87FCB78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8D8BF598EB180C54B68B100DA5FE226 /* Pods-Fedimos.release.xcconfig */;
+			baseConfigurationReference = 49DFD5D72852DEF10CCA13151BFDD87D /* Pods-Fedimos.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -750,7 +1015,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Fedimos/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Fedimos/Pods-Fedimos.modulemap";
 				OTHER_LDFLAGS = "";
@@ -768,74 +1037,9 @@
 			};
 			name = Release;
 		};
-		2AA91C348DC4FD38C0B46B05DAB1BD8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D07E00D6D230C78FD0A608923E633B88 /* Starscream.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2B35863061020B919C1E1E8557DC4EB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D07E00D6D230C78FD0A608923E633B88 /* Starscream.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3AB73F370814C62261FFB29BC9C11D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98D0F28A5AC6E49859E014D1E6C3395D /* Pods-FedimosTests.debug.xcconfig */;
+			baseConfigurationReference = E889180ACB71230C3AF7AA247FDB8692 /* Pods-FedimosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -851,7 +1055,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FedimosTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FedimosTests/Pods-FedimosTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -869,7 +1077,7 @@
 		};
 		510BF9FE90964F0BCF1C09BC579BE9C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C91378A7F3D2FE9049C579DAC18E34B /* Pods-FedimosUITests.debug.xcconfig */;
+			baseConfigurationReference = A20A8338B1070ECBFE5FF75F843049F5 /* Pods-FedimosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -885,7 +1093,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FedimosUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FedimosUITests/Pods-FedimosUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -901,10 +1113,12 @@
 			};
 			name = Debug;
 		};
-		9097B6336D4628EBA99EFD55569182F6 /* Debug */ = {
+		881E4583FBC28BA3CAF13F9B8EB972B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4C8571466A29780B9F00814802751F3 /* Socket.IO-Client-Swift.xcconfig */;
+			baseConfigurationReference = F26F2E8714B82B1E21381FD475BFFB58 /* Pods-FedimosConnection.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -914,19 +1128,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FedimosConnection/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
-				PRODUCT_MODULE_NAME = SocketIO;
-				PRODUCT_NAME = SocketIO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FedimosConnection/Pods-FedimosConnection.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -996,9 +1216,9 @@
 			};
 			name = Debug;
 		};
-		CCD7A9EBF79709F88EABD4026A4DD40A /* Release */ = {
+		BAA99948416EBFEA4A5C725550E0ED0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4C8571466A29780B9F00814802751F3 /* Socket.IO-Client-Swift.xcconfig */;
+			baseConfigurationReference = 81CD12F813EFA6A8E0A6C59819EF8B3C /* Socket.IO-Client-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1013,7 +1233,11 @@
 				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
 				PRODUCT_MODULE_NAME = SocketIO;
 				PRODUCT_NAME = SocketIO;
@@ -1021,7 +1245,120 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C540BAF52659255FF1D7BBF06B0381DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC99B3A524883182B2C9F931A0EFFCD /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D047DB6754B013BADA6114EE1FC5F490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CD12F813EFA6A8E0A6C59819EF8B3C /* Socket.IO-Client-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
+				PRODUCT_MODULE_NAME = SocketIO;
+				PRODUCT_NAME = SocketIO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0FB679B2799CE66AFAD0160BADBE9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAE971BEB6703B51A4DAF81D9651F29 /* Pods-FedimosConnectionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FedimosConnectionTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FedimosConnectionTests/Pods-FedimosConnectionTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1031,7 +1368,7 @@
 		};
 		D3ACD7CA48F20BD00D61E2A0743C3757 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08C8820B50D8CA0ACD8B24C91C6E2761 /* Pods-FedimosUITests.release.xcconfig */;
+			baseConfigurationReference = 6C34A69844F1D83C4CABD2EEA44EC13E /* Pods-FedimosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1047,7 +1384,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FedimosUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FedimosUITests/Pods-FedimosUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1064,9 +1405,49 @@
 			};
 			name = Release;
 		};
+		DADA562E1257CFAE126081DFA36A61C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B1C57B214D409B71A4A01AB595AC2C /* Pods-FedimosConnection.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FedimosConnection/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FedimosConnection/Pods-FedimosConnection.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E006CD18F7EFB25308708FE5F1CF6613 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2A409558262EE9035A8BD5D3F47F290 /* Pods-FedimosTests.release.xcconfig */;
+			baseConfigurationReference = B9FFF29FF2393562F966E5810FD4E118 /* Pods-FedimosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1082,7 +1463,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FedimosTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FedimosTests/Pods-FedimosTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1099,9 +1484,45 @@
 			};
 			name = Release;
 		};
+		E5A6FBED51884A6EB299DAF1BAFB5133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC99B3A524883182B2C9F931A0EFFCD /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F0FEE733AC2B5CA19F06252CC2931D5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C363C6429AAF196F33938ED33BC9ACA5 /* Pods-Fedimos.debug.xcconfig */;
+			baseConfigurationReference = D6FF48C7C42C9E1163EFCAD3D8ACCC71 /* Pods-Fedimos.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1117,7 +1538,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Fedimos/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Fedimos/Pods-Fedimos.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1138,11 +1563,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1116A89B1FD7567698B1C3F5158E0CAE /* Build configuration list for PBXNativeTarget "Pods-FedimosConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2AE68D3ECC64415F2ADF7984207256 /* Debug */,
+				D0FB679B2799CE66AFAD0160BADBE9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
 				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A0B99EEC7F5CE139EEC141FCC814E5 /* Build configuration list for PBXNativeTarget "Pods-FedimosConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881E4583FBC28BA3CAF13F9B8EB972B1 /* Debug */,
+				DADA562E1257CFAE126081DFA36A61C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1168,8 +1611,8 @@
 		B26DB36515AAE0A0BA4F1B460B87F7AA /* Build configuration list for PBXNativeTarget "Socket.IO-Client-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9097B6336D4628EBA99EFD55569182F6 /* Debug */,
-				CCD7A9EBF79709F88EABD4026A4DD40A /* Release */,
+				D047DB6754B013BADA6114EE1FC5F490 /* Debug */,
+				BAA99948416EBFEA4A5C725550E0ED0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1186,8 +1629,8 @@
 		E245B456A3AF6D6498A4F95E2BC98006 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AA91C348DC4FD38C0B46B05DAB1BD8C /* Debug */,
-				2B35863061020B919C1E1E8557DC4EB9 /* Release */,
+				E5A6FBED51884A6EB299DAF1BAFB5133 /* Debug */,
+				C540BAF52659255FF1D7BBF06B0381DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+framework module Pods_FedimosConnectionTests {
+  umbrella header "Pods-FedimosConnectionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
