@@ -8,28 +8,6 @@
 
 import UIKit
 
-/// A structure used to setup contraints depending on a `UIEdgeInsets`.
-private struct _ConstraintSet {
-    let top: NSLayoutConstraint
-    let right: NSLayoutConstraint
-    let bottom: NSLayoutConstraint
-    let left: NSLayoutConstraint
-    
-    func setAllActive(_ active: Bool) {
-        top.isActive = active
-        right.isActive = active
-        bottom.isActive = active
-        left.isActive = active
-    }
-    
-    func setConstantsWith(edgeInsets: UIEdgeInsets) {
-        top.constant = edgeInsets.top
-        right.constant = -edgeInsets.right
-        bottom.constant = -edgeInsets.bottom
-        left.constant = edgeInsets.left
-    }
-}
-
 /// A view representing a bubble.
 class FDBubbleView: UIView {
     
@@ -38,9 +16,11 @@ class FDBubbleView: UIView {
     
     /// Returns the content view of the bubble object.
     let contentView = UIView()
-    private var contentViewContraintSet: _ConstraintSet!
     
-    var cornerRadius: CGFloat = 20 {
+    /// The view used as the background of the bubble view.
+    let backgroundView = UIView()
+    
+    var cornerRadius: CGFloat = 17 {
         didSet {
             bubbleImageGenerator = FDBubbleImageGenerator(cornerRadius: cornerRadius)
             updateBubbleImage()
@@ -62,7 +42,11 @@ class FDBubbleView: UIView {
         }
     }
     
-    var contentInsets: UIEdgeInsets = .zero {
+    /// The content insets that ate gonna affect the layout margins of the contentView.
+    ///
+    /// Leading is always in the side of the tip, no matter the language direction.
+    /// If the bubble has no orientation, the leading value will be used for both leading and trailing.
+    var contentInsets: NSDirectionalEdgeInsets = .zero {
         didSet {
             updateContentInsets()
         }
@@ -76,19 +60,22 @@ class FDBubbleView: UIView {
         super.init(frame: frame)
         
         bubbleImageGenerator = FDBubbleImageGenerator(cornerRadius: cornerRadius)
-        updateBubbleImage()
         
-        addSubview(bubbleImageView)
-        bubbleImageView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate(NSLayoutConstraint.constraintsEdgeToEdge(from: self, to: bubbleImageView))
+        // Background view.
+        addSubview(backgroundView)
+        backgroundView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraintsEdgeToEdge(from: self, to: backgroundView))
+        backgroundView.mask = bubbleImageView
+        backgroundView.backgroundColor = .black
         
+        // Content view.
         addSubview(contentView)
-        contentViewContraintSet = _ConstraintSet(top: contentView.topAnchor.constraint(equalTo: topAnchor),
-                                                 right: contentView.rightAnchor.constraint(equalTo: rightAnchor),
-                                                 bottom: contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
-                                                 left: contentView.leftAnchor.constraint(equalTo: leftAnchor))
-        contentViewContraintSet.setAllActive(true)
         contentView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraintsEdgeToEdge(from: self, to: contentView))
+        
+        // Setup.
+        updateBubbleImage()
+        updateContentInsets()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -101,10 +88,40 @@ class FDBubbleView: UIView {
     
     private func updateContentInsets() {
         let options = FDBubblePathOptions(cornerRadius: cornerRadius,
-                                          contentInsets: contentInsets,
+                                          contentInsets: convertContentInsets(),
                                           orientation: bubbleTipOrientation,
                                           isTipVisible: isTipVisible)
-        contentViewContraintSet.setConstantsWith(edgeInsets: FDBubblePath(options: options).bubbleContentInsets())
+        let insets = FDBubblePath(options: options).bubbleContentInsets()
+        contentView.layoutMargins = insets
+    }
+    
+    // MARK: - Layout
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        bubbleImageView.frame = bounds
+    }
+    
+    /// Converts the directional content insets into an edge insets depending
+    /// on the orientation of the bubble.
+    private func convertContentInsets() -> UIEdgeInsets {
+        let startInsets = contentInsets
+        var finalInsets = UIEdgeInsets(top: startInsets.top, left: 0, bottom: startInsets.bottom, right: 0)
+        
+        switch bubbleTipOrientation {
+        case .left:
+            finalInsets.left = startInsets.leading
+            finalInsets.right = startInsets.trailing
+        case .right:
+            finalInsets.left = startInsets.trailing
+            finalInsets.right = startInsets.leading
+        case .none:
+            finalInsets.left = startInsets.leading
+            finalInsets.right = startInsets.leading
+        }
+        
+        return finalInsets
     }
     
 }
