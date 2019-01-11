@@ -19,21 +19,29 @@ enum FDBubblePathOrientation {
 
 /// The options for the bubble path.
 struct FDBubblePathOptions {
-    let cornerRadius: CGFloat
-    let contentInsets: UIEdgeInsets
-    let orientation: FDBubblePathOrientation
+    var cornerRadius: CGFloat
+    var contentInsets: UIEdgeInsets
+    var orientation: FDBubblePathOrientation
+    var isTipVisible: Bool
 }
 
-/// An object used to create path for bubbles.
+/// An object used to create paths for bubbles.
+///
+/// In order to create a view with it, the contentSize should first be used in
+/// `bubbleSize(forContentSize:, :)`. Then the returned size should be used in
+/// `bubblePath(withSize:, :)`. The two are separated so that if the size of the first
+/// is too big, you can still choose a smaller one for the path.
 class FDBubblePath: NSObject {
     
-    static let shared = FDBubblePath()
+    var options: FDBubblePathOptions
     
-    private override init() {
+    init(options: FDBubblePathOptions) {
+        self.options = options
         super.init()
     }
     
-    private func additionalWidthForTip(with options: FDBubblePathOptions) -> CGFloat {
+    /// Returns an additional width that should be added to the standart bubble size.
+    private func additionalWidthForTip() -> CGFloat {
         switch options.orientation {
         case .left, .right:
             return options.cornerRadius * 0.3
@@ -42,14 +50,21 @@ class FDBubblePath: NSObject {
         }
     }
     
-    /// The size a bubble should have depending on the parameters.
-    ///
-    /// - Parameters:
-    ///   - contentSize: The size of the content.
-    ///   - options: The options for the path.
-    func bubbleSize(forContentSize contentSize: CGSize, options: FDBubblePathOptions) -> CGSize {
-        return CGSize(width: contentSize.width + options.contentInsets.horizontal + additionalWidthForTip(with: options),
-                      height: contentSize.height + options.contentInsets.vertical)
+    /// Returns the content insets that should be used.
+    func bubbleContentInsets() -> UIEdgeInsets {
+        var bubbleContentInsets = options.contentInsets
+        let additionalTipWidth = self.additionalWidthForTip()
+        
+        switch options.orientation {
+        case .left:
+            bubbleContentInsets.left += additionalTipWidth
+        case .right:
+            bubbleContentInsets.right += additionalTipWidth
+        case .none:
+            break
+        }
+        
+        return bubbleContentInsets
     }
     
     /// The path for a bubble.
@@ -57,14 +72,15 @@ class FDBubblePath: NSObject {
     ///
     /// - Parameters:
     ///   - size: The size of the entire bubble.
-    ///   - options: The options for the path.
-    /// - Returns: The path of the bubble and the contentRect inside the bubble.
-    func bubblePath(withSize size: CGSize, options: FDBubblePathOptions) -> (path: UIBezierPath, contentRect: CGRect) {
+    /// - Returns: The path of the bubble.
+    func bubblePath(withSize size: CGSize) -> UIBezierPath {
         let path = UIBezierPath()
-        let additionalTipWidth = additionalWidthForTip(with: options)
+        let additionalTipWidth = self.additionalWidthForTip()
         let cornerRadius = options.cornerRadius
-        let contentInsets = options.contentInsets
         let orientation = options.orientation
+        let isTipVisible = options.isTipVisible
+        
+        // We draw the path as a left bubble and if necessary, we mirror it.
         
         let corners = [CGPoint(x: cornerRadius + additionalTipWidth, y: cornerRadius),
                        CGPoint(x: size.width - cornerRadius, y: cornerRadius),
@@ -75,8 +91,9 @@ class FDBubblePath: NSObject {
         path.addArc(withCenter: corners[1], radius: cornerRadius, startAngle: -CGFloat.pi/2, endAngle: 0, clockwise: true)
         path.addArc(withCenter: corners[2], radius: cornerRadius, startAngle: 0, endAngle: CGFloat.pi/2, clockwise: true)
         
-        switch orientation {
-        case .left, .right:
+        if orientation == .none || !isTipVisible {
+            path.addArc(withCenter: corners[3], radius: cornerRadius, startAngle: CGFloat.pi/2, endAngle: CGFloat.pi, clockwise: true)
+        } else {
             path.addArc(withCenter: corners[3], radius: cornerRadius, startAngle: CGFloat.pi/2, endAngle: CGFloat.pi*0.7, clockwise: true)
             path.addCurve(to: CGPoint(x: 0, y: size.height),
                           controlPoint1: CGPoint(x: additionalTipWidth, y: size.height),
@@ -84,18 +101,13 @@ class FDBubblePath: NSObject {
             path.addCurve(to: CGPoint(x: additionalTipWidth, y: size.height - cornerRadius*0.75),
                           controlPoint1: CGPoint(x: additionalTipWidth/2, y: size.height),
                           controlPoint2: CGPoint(x: additionalTipWidth, y: size.height - cornerRadius/4))
-        case .none:
-            path.addArc(withCenter: corners[3], radius: cornerRadius, startAngle: CGFloat.pi/2, endAngle: CGFloat.pi, clockwise: true)
         }
+        
         path.close()
         
-        var contentRect = CGRect(x: contentInsets.left,
-                                 y: contentInsets.top,
-                                 width: size.width - contentInsets.horizontal - additionalTipWidth,
-                                 height: size.height - contentInsets.vertical)
         switch orientation {
         case .left:
-            contentRect.origin.x += additionalTipWidth
+            break
         case .right:
             path.apply(CGAffineTransform(scaleX: -1, y: 1))
             path.apply(CGAffineTransform(translationX: size.width, y: 0))
@@ -103,7 +115,7 @@ class FDBubblePath: NSObject {
             break
         }
         
-        return (path, contentRect)
+        return path
     }
 
 }
